@@ -1,0 +1,25 @@
+
+
+.image-with-text {
+  display: flex;
+  flex-direction: row;
+
+  column-gap: 2rem;
+}
+.image-with-text.reverse {
+  flex-direction: row-reverse;
+}
+@media screen and (max-width: 749px) {
+  .image-with-text {
+    flex-direction: column
+  }
+  .image-with-text.reverse {
+    flex-direction: column
+  }
+}
+.image-with-text>div {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  max-width: 50%;
+}

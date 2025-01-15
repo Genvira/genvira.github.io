@@ -11,35 +11,5 @@ search: false
 /* @import "test"; */
 
 @import "flex";
-
-/* Smaller images in feature row */
-.feature-row__small-image .archive__item-teaser {
-  text-align: center;
-}
-.feature-row__small-image img {
-  max-height: 5rem;
-}
-
-.image-with-text {
-  display: flex;
-  flex-direction: row;
-
-  column-gap: 2rem;
-}
-.image-with-text.reverse {
-  flex-direction: row-reverse;
-}
-@media screen and (max-width: 749px) {
-  .image-with-text {
-    flex-direction: column
-  }
-  .image-with-text.reverse {
-    flex-direction: column
-  }
-}
-.image-with-text>div {
-  display: flex;
-  flex-direction: column;
-  align-self: center;
-  max-width: 50%;
-}
+@import "feature-row";
+@import "image-with-text";
