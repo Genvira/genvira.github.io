@@ -4,7 +4,7 @@ permalink: /
 hidden: true
 header:
   overlay_color: "#5e616c"
-  overlay_image: https://mmistakes.github.io/minimal-mistakes/assets/images/mm-home-page-feature.jpg
+  overlay_image: https://images.pexels.com/photos/4021781/pexels-photo-4021781.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1300&dpr=1
   actions:
     - label: "About Us"
       url: "/about"
