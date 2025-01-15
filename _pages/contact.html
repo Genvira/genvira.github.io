@@ -1,0 +1,64 @@
+---
+permalink: /contact/
+title: "Contact Us"
+---
+
+
+<div style="width: 100vw; position: relative; left: calc(-50vw + 50%)">
+  <div class="flex-row flex-justify-space-evenly flex-wrap" style="align-items: center; margin: 0 2rem;">
+
+    <!-- Contact form -->
+    <div id="contact-form" class="flex-column">
+      <form action="https://formspree.io/f/xovvbkae" method="POST">
+        <label for="name">Name</label>
+        <input type="text" name="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" name="email" required>
+
+        <!-- add hidden Honeypot input to prevent spams -->
+        <input type="hidden" name="_gotcha" style="display:none !important">
+
+        <label for="purpose">Purpose</label>
+        <select name="purpose" required>
+          <option value="general">General Inquiries</option>
+          <option value="products">Products</option>
+          <option value="services">Services</option>
+          <option value="other">Other</option>
+        </select>
+
+        <label for="message">Message</label>
+        <textarea type="text" name="message" required></textarea>
+
+        <button type="submit">Send</button>
+      </form>
+    </div>
+
+    <div class="flex-column">
+      <!-- Map -->
+      <div style="max-width:100%;overflow:hidden;color:red;width: 25rem;height:15rem;">
+        <div id="gmap-canvas" style="height:100%; width:100%;max-width:100%;"><iframe
+            style="height:100%;width:100%;border:0;" frameborder="0"
+            src="https://www.google.com/maps/embed/v1/place?q=310+hunt+club+rd&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
+        </div>
+        <style>
+          #gmap-canvas img.text-marker {
+            max-width: none !important;
+            background: none !important;
+          }
+
+          img {
+            max-width: none
+          }
+        </style>
+      </div>
+
+
+      <!-- Contact Info -->
+      <div>
+        <h3>Contact Info</h3>
+        {% include contact %}
+      </div>
+    </div class="flex-column">
+  </div>
+</div>
