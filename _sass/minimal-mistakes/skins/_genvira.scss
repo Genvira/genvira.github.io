@@ -1,0 +1,45 @@
+/* ==========================================================================
+   Air skin
+   ========================================================================== */
+
+/* Brand colors */
+$blue: #00afef !default;
+$green: #00a859 !default;
+$red: #EC3438 !default;
+$orange: #F69734 !default;
+$purple: #3E4095 !default;
+$pink: #EB288F !default;
+
+/* Theme base colors */
+$light-1: mix(#eeeeee, $blue, 98%) !default;
+$light-2: mix(#fff, $blue, 98%) !default;
+
+$dark-1: #222831 !default;
+$dark-2: #393e46 !default;
+
+/* Colors */
+$background-color: $light-1 !default;
+$text-color: $dark-1 !default;
+$muted-text-color: $dark-2 !default;
+$primary-color: $blue !default;
+$border-color: mix($light-2, $dark-2, 75%) !default;
+$footer-background-color: mix($dark-2, $primary-color, 75%) !default;
+$link-color: $dark-2 !default;
+$masthead-link-color: $text-color !default;
+$masthead-link-color-hover: $text-color !default;
+$navicon-link-color-hover: mix($light-2, $text-color, 80%) !default;
+
+.page__footer {
+  color: $light-2 !important; // override
+}
+
+.page__footer-follow .social-icons .svg-inline--fa {
+  color: inherit;
+}
+
+.author__urls.social-icons i,
+.author__urls.social-icons .svg-inline--fa,
+.page__footer-follow .social-icons i,
+.page__footer-follow .social-icons .svg-inline--fa  {
+  color: inherit;
+}
