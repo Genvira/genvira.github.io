@@ -1,0 +1,38 @@
+{% capture logo_path %}{{ site.logo }}{% endcapture %}
+
+<div class="flex-row flex-justify-space-between flex-wrap" style="margin-bottom: 1rem;">
+  <!-- Left column with logo and contact info -->
+  <div class="flex-column">
+    <!-- Site logo -->
+    {% unless logo_path == empty %}
+    <a class="site-logo" href="{{ '/' | relative_url }}">
+      <img style="max-height: 4rem;" src="{{ logo_path | relative_url }}"
+        alt="{{ site.masthead_title | default: site.title }}">
+    </a>
+    {% endunless %}
+
+    <!-- Contact Info -->
+    {% include contact %}
+
+  </div>
+
+  <!-- Middle column -->
+  <!-- <div class="flex-column"></div> -->
+
+  <!-- Right column (Nav) -->
+  <div class="flex-column">
+    <h3>Navigation</h3>
+    <nav>
+      <ul>
+        {% for link in site.data.navigation.main %}
+        <li>
+          <a href="{{ link.url | relative_url }}" {% if link.description %} title="{{ link.description }}" {% endif %}
+            {% if link.target %} target="{{ link.target }}" {% endif %}>
+            {{ link.title }}
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
+    </nav>
+  </div>
+</div>
