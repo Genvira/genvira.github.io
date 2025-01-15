@@ -8,6 +8,8 @@ main:
   - title: "About"
     url: /about/
     sub:
+      - title: "Members and Advisors"
+        url: /about/members-and-advisors/
       - title: "Careers"
         url: /about/careers/
   - title: "Contact"

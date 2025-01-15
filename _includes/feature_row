@@ -4,7 +4,13 @@
 {% assign feature_row = page.feature_row %}
 {% endif %}
 
-<div class="feature__wrapper">
+{% if include.hx %}
+{% assign hx = include.hx %}
+{% else %}
+{% assign hx = "h2" %}
+{% endif %}
+
+<div class="feature__wrapper {% if include.class %}{{ include.class }}{% endif %}">
 
   {% for f in feature_row %}
   <div class="feature__item{% if include.type %}--{{ include.type }}{% endif %}">
@@ -20,7 +26,7 @@
 
       <div class="archive__item-body">
         {% if f.title %}
-        <h2 class="archive__item-title">{{ f.title }}</h2>
+        <{{ hx }} class="archive__item-title">{{ f.title }}</{{ hx }}>
         {% endif %}
 
         {% if f.excerpt %}
