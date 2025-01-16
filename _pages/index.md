@@ -121,4 +121,4 @@ Our world-class laboratory and experts can create a vaccine for all your researc
 {% include feature_row %}
 
 ## Supported by
-{% include gallery id="supported_by" %}
+{% include gallery id="supported_by" class="flex-justify-space-evenly" %}
