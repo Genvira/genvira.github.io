@@ -60,6 +60,23 @@ feature_row:
     image_path: https://files.svgcdn.io/material-symbols/heart-plus-rounded.svg
     excerpt: Transition and scalability consultation
     item_class: "feature-row__small-image"
+
+supported_by:
+  - url: https://feddev-ontario.canada.ca/
+    image_path: /assets/images/supported-by/feddev-canada.png
+    alt: FedDev
+  - url: https://www.ontario.ca/page/government-ontario
+    image_path: /assets/images/supported-by/province-of-ontario.svg
+    alt: Government of Ontario
+  - url: https://www.mitacs.ca/
+    image_path: /assets/images/supported-by/mitacs-logo-blue.svg
+    alt: Mitacs
+  - url: https://www.investottawa.ca/
+    image_path: /assets/images/supported-by/invest-ottawa.svg
+    alt: Invest Ottawa
+  - url: https://www.obio.ca/
+    image_path: /assets/images/supported-by/obio.svg
+    alt: Obio
 ---
 
 <!-- Three images section -->
@@ -102,3 +119,6 @@ Our world-class laboratory and experts can create a vaccine for all your researc
 
 ## Our Services
 {% include feature_row %}
+
+## Supported by
+{% include gallery id="supported_by" %}
