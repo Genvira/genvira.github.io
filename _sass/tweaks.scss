@@ -1,0 +1,11 @@
+/*
+ * Miscelaneous tweaks
+ */
+
+/*
+ * Fix follow button appearing in nonexistent sidebar
+ * when screen width < 64em
+ */ 
+.author__urls-wrapper button {
+    display: none;
+}
