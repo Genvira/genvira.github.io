@@ -2,6 +2,11 @@
 title: SARS-CoV-2 Spike VSV-based Pseudovirus
 last_modified_at: 2025-01-16
 
+header:
+  teaser: https://images.pexels.com/photos/3992933/pexels-photo-3992933.jpeg?auto=compress&cs=tinysrgb&w=420&h=250&dpr=1
+  overlay_image: https://images.pexels.com/photos/3992933/pexels-photo-3992933.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1
+  show_overlay_excerpt: false
+
 image_1:
   - image_path: "/assets/images/products/sars-pseudovirus/image-1.svg"
     alt: description of table
