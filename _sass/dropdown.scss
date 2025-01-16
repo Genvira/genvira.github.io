@@ -9,6 +9,18 @@
   /* border: none; */
 }
 
+/* Add cheveron marker */
+a.dropdown-trigger::after {
+  /*  */
+  content: " \f078";
+  /* Use the FontAwesome font */
+  font: var(--fa-font-solid);
+  /* Set the weight for this icon style */
+  font-weight: 900;
+  /* Make sure icons render pixel-perfect */
+  -webkit-font-smoothing: antialiased;
+}
+
 /* The container <div> - needed to position the dropdown content */
 .dropdown {
   /* position: relative; */
