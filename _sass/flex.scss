@@ -34,14 +34,24 @@
   flex-wrap: wrap-reverse;
 }
 
-.flex-justify-space-between {
-  justify-content: space-between;
+/*
+ * Flex justify-content options
+ */
+.flex-justify-center {
+  justify-content: center;
 }
-
+.flex-justify-flex-start {
+  justify-content: flex-start;
+}
+.flex-justify-flex-end {
+  justify-content: flex-end;
+}
 .flex-justify-space-around {
   justify-content: space-around;
 }
-
+.flex-justify-space-between {
+  justify-content: space-between;
+}
 .flex-justify-space-evenly {
   justify-content: space-evenly;
 }
