@@ -31,6 +31,7 @@ contact:
     country: Canada
 minimal_mistakes_skin: genvira
 search: true
+locale: en-CA
 
 atom_feed:
   # Hide feed
