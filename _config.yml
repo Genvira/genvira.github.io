@@ -18,6 +18,12 @@ masthead_title: " " # None, only logo
 logo: "assets/branding/logo.svg"
 description: >- # this means to ignore newlines until "baseurl:"
   We build innovative viral based biotherapeutics
+minimal_mistakes_skin: genvira
+breadcrumbs: true
+search: true
+locale: en-CA
+
+# Contact information
 contact:
   email: info@genvira.com
   phone: +1 (613) 695-4718
@@ -27,10 +33,6 @@ contact:
     region: Ontario
     post_code: K1V 1C1
     country: Canada
-minimal_mistakes_skin: genvira
-breadcrumbs: true
-search: true
-locale: en-CA
 
 atom_feed:
   # Hide feed
