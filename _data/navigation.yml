@@ -17,3 +17,5 @@ main:
         url: /posts/tags/
   - title: "Products"
     url: /products/
+  - title: "Services"
+    url: /services/
