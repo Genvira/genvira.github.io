@@ -28,6 +28,7 @@ contact:
     post_code: K1V 1C1
     country: Canada
 minimal_mistakes_skin: genvira
+breadcrumbs: true
 search: true
 locale: en-CA
 
