@@ -95,6 +95,16 @@ defaults:
     values:
       layout: single
       author_profile: true
+  # _products
+  - scope:
+      path: ""
+      type: products
+    values:
+      layout: single
+
+collections:
+  products:
+    output: true
 
 category_archive:
   type: liquid
