@@ -2,6 +2,11 @@
    Genvira skin
    ========================================================================== */
 
+/*
+ * Colors
+ * ====================================
+ */
+
 /* Brand colors */
 $blue: #00afef !default;
 $green: #00a859 !default;
@@ -43,3 +48,18 @@ $navicon-link-color-hover: mix($light-2, $text-color, 80%) !default;
 .page__footer-follow .social-icons .svg-inline--fa  {
   color: inherit;
 }
+
+
+/*
+ * Typography
+ * ====================================
+ */
+
+/* System typefaces */
+$sans-serif: 'Atkinson Hyperlegible', -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif !default;
+
+/* Sans-serif typefaces */
+/* Not provided: Not free */
+$century-gothic: 'Century Gothic', 'Levenim MT', $sans-serif;
+
+$header-font-family: $century-gothic !default;
