@@ -17,12 +17,14 @@ Based heavily on gallery
   {% endif %}
 {% endif %}
 
-<figure class="{{ gallery_layout }} {{ include.class }} flex-justify-space-evenly" style="row-gap: 0.5rem; column-gap: 0.5rem">
+<figure class="{{ gallery_layout }} {{ include.class }} flex-justify-space-evenly" style="row-gap: 0.5rem; column-gap: 0.5rem; align-items: center">
   {% for img in gallery %}
     {% if img.url %}
       <a href="{{ img.url | relative_url }}"
+        style="display: flex; align-items: center"
         {% if img.title %}title="{{ img.title }}"{% endif %}>
           <img src="{{ img.image_path | relative_url }}"
+            style="margin-bottom: 0"
                alt="{% if img.alt %}{{ img.alt }}{% endif %}">
       </a>
     {% else %}
