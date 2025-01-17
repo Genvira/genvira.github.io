@@ -63,7 +63,7 @@ feature_row:
 
 supported_by:
   - url: https://feddev-ontario.canada.ca/
-    image_path: /assets/images/supported-by/feddev-canada.png
+    image_path: /assets/images/supported-by/feddev-canada.svg
     alt: FedDev
   - url: https://www.ontario.ca/page/government-ontario
     image_path: /assets/images/supported-by/province-of-ontario.svg
