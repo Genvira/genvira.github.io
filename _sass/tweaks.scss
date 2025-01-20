@@ -9,3 +9,12 @@
 .author__urls-wrapper button {
     display: none;
 }
+
+/* Re-do the drop-shadow to apply to more than the text */
+/* It will also apply to the outline of the button and other things.  */
+.page__hero--overlay .page__title, .page__hero--overlay .page__meta, .page__hero--overlay .comment__date, .page__hero--overlay .page__lead, .page__hero--overlay .btn {
+    text-shadow: None;
+}
+.page__hero--overlay .wrapper {
+    filter: drop-shadow(1px 1px 4px rgba(0, 0, 0, 0.5));
+}
