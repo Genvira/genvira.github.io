@@ -1,0 +1,35 @@
+{% assign id = include.id %}
+{% assign title = include.title %}
+{% assign content = include.content %}
+{% assign class = include.class %}
+
+{% if include.hx %}
+{% assign hx = include.hx %}
+{% else %}
+{% assign hx = "h2" %}
+{% endif %}
+
+<div id="{{ id }}" class="modal-container">
+  <div class="modal {{ class }}">
+    <{{ hx }}>{{ title }}</{{ hx }}>
+    {{ content | markdownify }}
+  </div>
+</div>
+
+<!-- Event handlers for enabling/disabling the modal -->
+<script>
+  var elements = document.querySelectorAll('a.modal-button__{{ id }}');
+  elements.forEach(element => {
+    element.addEventListener('click', function (event) {
+      event.preventDefault();
+      event.stopPropagation();
+      console.log('Clicked the button for the modal');
+      document.getElementById('{{ id }}').classList.add("show-modal");
+    });
+  });
+  document.getElementById('{{ id }}').addEventListener('click', function (event) {
+    if (event.target.closest('.modal')) return;
+    console.log('Closing modal');
+    document.getElementById('{{ id }}').classList.remove("show-modal");
+  });
+</script>
