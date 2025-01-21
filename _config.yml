@@ -16,6 +16,7 @@
 title: Genvira
 masthead_title: " " # None, only logo
 logo: "assets/branding/logo.svg"
+logo_aspect_ratio: "236 / 77"
 description: >- # this means to ignore newlines until "baseurl:"
   We build innovative viral based biotherapeutics
 minimal_mistakes_skin: genvira

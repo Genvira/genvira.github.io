@@ -1,4 +1,5 @@
 {% capture logo_path %}{{ site.logo }}{% endcapture %}
+{% capture logo_aspect_ratio %}{{ site.logo_aspect_ratio }}{% endcapture %}
 
 <div class="flex-row flex-justify-space-between flex-wrap" style="margin-bottom: 1rem;">
   <!-- Left column with logo and contact info -->
@@ -6,8 +7,8 @@
     <!-- Site logo -->
     {% unless logo_path == empty %}
     <a class="site-logo" href="{{ '/' | relative_url }}">
-      <img style="max-height: 4rem;" src="{{ logo_path | relative_url }}"
-        alt="{{ site.masthead_title | default: site.title }}">
+      <img style="max-height: 4rem; {% if logo_aspect_ratio %}aspect-ratio:{{ logo_aspect_ratio }}{% endif %}"
+        src="{{ logo_path | relative_url }}" alt="{{ site.masthead_title | default: site.title }}">
     </a>
     {% endunless %}
 
