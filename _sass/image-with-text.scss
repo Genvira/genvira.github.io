@@ -23,3 +23,10 @@
   align-self: center;
   max-width: 50%;
 }
+
+/* Give explicit width and aspect ratio */
+.image-with-text img {
+  width: 30rem;
+  object-fit: cover;
+  aspect-ratio: 3 / 2;
+}
