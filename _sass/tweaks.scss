@@ -18,3 +18,9 @@
 .page__hero--overlay .wrapper {
     filter: drop-shadow(1px 1px 4px rgba(0, 0, 0, 0.5));
 }
+
+/*
+ * Change the animation keyframes for initial loading
+ * ===================================================
+ */
+@import "minimal-mistakes/animations";
