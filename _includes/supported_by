@@ -6,33 +6,32 @@ Based heavily on gallery
 {% assign gallery = site.data.supported_by %}
 
 {% if include.layout %}
-  {% assign gallery_layout = include.layout %}
+{% assign gallery_layout = include.layout %}
 {% else %}
-  {% if gallery.size == 2 %}
-    {% assign gallery_layout = 'half' %}
-  {% elsif gallery.size >= 3 %}
-    {% assign gallery_layout = 'third' %}
-  {% else %}
-    {% assign gallery_layout = '' %}
-  {% endif %}
+{% if gallery.size == 2 %}
+{% assign gallery_layout = 'half' %}
+{% elsif gallery.size >= 3 %}
+{% assign gallery_layout = 'third' %}
+{% else %}
+{% assign gallery_layout = '' %}
+{% endif %}
 {% endif %}
 
-<figure class="{{ gallery_layout }} {{ include.class }} flex-justify-space-evenly" style="row-gap: 0.5rem; column-gap: 0.5rem; align-items: center">
+<figure class="{{ gallery_layout }} {{ include.class }} flex-justify-space-evenly"
+  style="row-gap: 0.5rem; column-gap: 0.5rem; align-items: center">
   {% for img in gallery %}
-    {% if img.url %}
-      <a href="{{ img.url | relative_url }}"
-        style="display: flex; align-items: center"
-        {% if img.title %}title="{{ img.title }}"{% endif %}>
-          <img src="{{ img.image_path | relative_url }}"
-            style="margin-bottom: 0"
-               alt="{% if img.alt %}{{ img.alt }}{% endif %}">
-      </a>
-    {% else %}
-      <img src="{{ img.image_path | relative_url }}"
-           alt="{% if img.alt %}{{ img.alt }}{% endif %}">
-    {% endif %}
+  {% if img.url %}
+  <a href="{{ img.url | relative_url }}" style="display: flex; align-items: center" {% if img.title
+    %}title="{{ img.title }}" {% endif %}>
+    <img src="{{ img.image_path | relative_url }}"
+      style="margin-bottom: 0; {% if img.aspect_ratio %}aspect-ratio:{{ img.aspect_ratio }}{% endif %}"
+      alt="{% if img.alt %}{{ img.alt }}{% endif %}">
+  </a>
+  {% else %}
+  <img src="{{ img.image_path | relative_url }}" alt="{% if img.alt %}{{ img.alt }}{% endif %}">
+  {% endif %}
   {% endfor %}
   {% if include.caption %}
-    <figcaption>{{ include.caption | markdownify | remove: "<p>" | remove: "</p>" }}</figcaption>
+  <figcaption>{{ include.caption | markdownify | remove: "<p>" | remove: "</p>" }}</figcaption>
   {% endif %}
 </figure>

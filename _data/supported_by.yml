@@ -1,15 +1,20 @@
 - url: https://feddev-ontario.canada.ca/
   image_path: /assets/images/supported-by/feddev-canada.svg
+  aspect_ratio: "153.373 / 35.947"
   alt: FedDev
 - url: https://www.ontario.ca/page/government-ontario
   image_path: /assets/images/supported-by/province-of-ontario.svg
+  aspect_ratio: "36.373 / 9.093"
   alt: Government of Ontario
 - url: https://www.mitacs.ca/
   image_path: /assets/images/supported-by/mitacs-logo-blue.svg
+  aspect_ratio: "865.466 / 145.971"
   alt: Mitacs
 - url: https://www.investottawa.ca/
   image_path: /assets/images/supported-by/invest-ottawa.svg
+  aspect_ratio: "98.2 / 35.35"
   alt: Invest Ottawa
 - url: https://www.obio.ca/
   image_path: /assets/images/supported-by/obio.svg
+  aspect_ratio: "144.198 / 44.715"
   alt: Obio
