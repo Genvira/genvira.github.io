@@ -24,3 +24,14 @@
  * ===================================================
  */
 @import "minimal-mistakes/animations";
+
+/*
+ * Width of wider page
+ * ====================================
+ */
+
+@media (min-width: 80em) {
+    #main.wide {
+        max-width: 1440px;
+    }
+}
