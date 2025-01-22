@@ -121,11 +121,13 @@ uncss:
   stylesheets:            # a list of stylesheets to be processed; mandatory
     - assets/css/main.css
   files:                  # html files to consider, globs are supported; default: **/*.html
-    - "**.html"
+    - "*.html"
+    - "**/*.html"
   compress: true          # compress resulting css with sass; default: false
   ignore:                 # always keep rules for these selectors; default: none
-    - ".is-loading"
-    - "#titleBar"
+    - ".show-modal"         # Styling for modal backdrop (shown)
+    - ".is--hidden"         # Hide the page content when searching
+    - ".search-content.is--visible" # When the search is visible
   media:                  # additional media queries to consider; default: undefined
     - print
   timeout: 100            # how long to wait for the JS to be loaded in milliseconds; default: undefined
