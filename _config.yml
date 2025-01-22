@@ -71,6 +71,7 @@ plugins:
   - jekyll-feed
   - jemoji
   - jekyll-include-cache
+  - jekyll-minifier
 
 footer:
   links:
@@ -129,5 +130,11 @@ uncss:
     - print
   timeout: 100            # how long to wait for the JS to be loaded in milliseconds; default: undefined
   # banner: false           # should the output include a banner comment; default: undefined
+
+jekyll-minifier:
+  compress_css: false     # uncss takes care of this
+  # Enable ES6 syntax
+  uglifier_args:
+    harmony: true
 
 
