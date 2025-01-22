@@ -1,0 +1,6 @@
+[submodule "_plugins/jekyll-uncss"]
+	path = _plugins/jekyll-uncss
+	url = https://github.com/episource/jekyll-uncss.git
+[submodule "jekyll-uncss"]
+	path = jekyll-uncss
+	url = https://github.com/episource/jekyll-uncss.git
