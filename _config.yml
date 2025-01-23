@@ -22,6 +22,8 @@ description: >- # this means to ignore newlines until "baseurl:"
 minimal_mistakes_skin: genvira
 breadcrumbs: true
 search: true
+lunr:
+  search_within_pages: true
 locale: en-CA
 
 # Contact information

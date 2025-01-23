@@ -1,5 +1,6 @@
 ---
 title: SARS-CoV-2 Spike VSV-based Pseudovirus
+keywords: Covid, SARS_CoV-2, VSV, Pseudovirus
 last_modified_at: 2025-01-16
 
 number: 0
