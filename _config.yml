@@ -127,7 +127,8 @@ uncss:
   ignore:                 # always keep rules for these selectors; default: none
     - ".show-modal"         # Styling for modal backdrop (shown)
     - ".is--hidden"         # Hide the page content when searching
-    - ".search-content.is--visible" # When the search is visible
+    - ".search-content.is--visible"     # When the search is visible
+    - ".search-content .archive__item"  # Search items width
   media:                  # additional media queries to consider; default: undefined
     - print
   timeout: 100            # how long to wait for the JS to be loaded in milliseconds; default: undefined
