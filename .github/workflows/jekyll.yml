@@ -45,7 +45,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v1
         with:
-          node_version: 22
+          node-version: 22
       - name: Install uncss
         run: npm install --global uncss
       - name: Setup Pages
