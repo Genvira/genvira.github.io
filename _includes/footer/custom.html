@@ -8,7 +8,7 @@
     {% unless logo_path == empty %}
     <a class="site-logo" href="{{ '/' | relative_url }}">
       <img style="max-height: 4rem; {% if logo_aspect_ratio %}aspect-ratio:{{ logo_aspect_ratio }}{% endif %}"
-        src="{{ logo_path | relative_url }}" alt="{{ site.masthead_title | default: site.title }}">
+        src="{{ logo_path | relative_url }}" alt="{{ site.title }}">
     </a>
     {% endunless %}
 
