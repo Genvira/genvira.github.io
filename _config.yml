@@ -25,6 +25,9 @@ lunr:
   search_within_pages: true
 locale: en-CA
 
+footer_scripts:
+  - "/assets/js/main-custom.js"
+
 # Contact information
 contact:
   email: info@genvira.com
