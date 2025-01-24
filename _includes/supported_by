@@ -23,8 +23,8 @@ Based heavily on gallery
   {% if img.url %}
   <a href="{{ img.url | relative_url }}" style="display: flex; align-items: center" {% if img.title
     %}title="{{ img.title }}" {% endif %}>
-    <img src="{{ img.image_path | relative_url }}"
-      style="margin-bottom: 0; {% if img.aspect_ratio %}aspect-ratio:{{ img.aspect_ratio }}{% endif %}"
+    <img src="{{ img.image_path | relative_url }}" style="margin-bottom: {{ img.margin_bottom | default: 0 }}; {% if
+      img.aspect_ratio %}aspect-ratio:{{ img.aspect_ratio }}{% endif %}"
       alt="{% if img.alt %}{{ img.alt }}{% endif %}">
   </a>
   {% else %}

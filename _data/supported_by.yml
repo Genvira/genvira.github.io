@@ -14,6 +14,7 @@
   image_path: /assets/images/supported-by/invest-ottawa.svg
   aspect_ratio: "98.2 / 35.35"
   alt: Invest Ottawa
+  margin_bottom: 1em
 - url: https://www.obio.ca/
   image_path: /assets/images/supported-by/obio.svg
   aspect_ratio: "144.198 / 44.715"
