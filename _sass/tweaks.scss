@@ -43,3 +43,14 @@
 .site-title {
   font-family: $century-gothic;
 }
+
+/*
+ * Header links visible when focused
+ * =============================
+ */
+/* uncss: ignore */
+.page__content h1 .header-link:focus, .page__content h2 .header-link:focus,
+.page__content h3 .header-link:focus, .page__content h4 .header-link:focus,
+.page__content h5 .header-link:focus, .page__content h6 .header-link:focus {
+  opacity: 0.2;
+}
