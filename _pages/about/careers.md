@@ -7,7 +7,7 @@ breadcrumbs: false
 
 header:
   overlay_color: "#5e616c"
-  overlay_image: https://images.pexels.com/photos/4021781/pexels-photo-4021781.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1300&dpr=1
+  overlay_image: /assets/images/home/stock-images/pexels-photo-4021781-1920.webp
   show_overlay_excerpt: true
   actions:
     - label: "Contact Us"
