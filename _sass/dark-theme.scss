@@ -3,6 +3,10 @@
  * =============================
  */
 
+:root {
+ color-scheme: light dark;
+}
+
 @media (prefers-color-scheme: dark) {
  .dark-theme-invert {
   filter: invert(1) hue-rotate(180deg);
