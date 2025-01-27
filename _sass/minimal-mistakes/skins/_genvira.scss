@@ -23,8 +23,8 @@ $light-1: mix(#eeeeee, $blue, 98%);
 $light-2: mix(#ddd, $blue, 98%);
 
 $dark-0: mix(#1f1f1f, $blue, 98%);
-$dark-1: #222831;
-$dark-2: #393e46;
+$dark-1: mix(#222222, $blue, 98%);
+$dark-2: mix(#404040, $blue, 98%);
 
 :root {
   --gv-background-color: #{$light-1};
