@@ -83,7 +83,7 @@ supported_by:
 {%
   include image_with_text
   reverse="true"
-  image_path="https://images.pexels.com/photos/5726794/pexels-photo-5726794.jpeg?auto=compress&cs=tinysrgb&w=600&h=350&dpr=1"
+  image_path="/assets/images/home/stock-images/pexels-photo-5726794-600.webp"
   alt="A woman looking through a microscope"
   text = 
 "
@@ -96,7 +96,7 @@ Genvira specializes in viral engineering. We design, construct and characterize 
 %}
 {%
   include image_with_text
-  image_path="https://images.pexels.com/photos/4033148/pexels-photo-4033148.jpeg?auto=compress&cs=tinysrgb&w=600&h=350&dpr=1"
+  image_path="/assets/images/home/stock-images/pexels-photo-4033148-600.webp"
   alt="Man Doing A Sample Test In The Laboratory"
   text = 
 "
@@ -107,7 +107,7 @@ Our bioengineered DNA viruses such as Adeno-associated viruses (AAVs) and Myxoma
 {%
   include image_with_text
   reverse="true"
-  image_path="https://images.pexels.com/photos/3735747/pexels-photo-3735747.jpeg?auto=compress&cs=tinysrgb&w=600&h=350&dpr=1"
+  image_path="/assets/images/home/stock-images/pexels-photo-3735747-600.webp"
   alt="Person Holding Test Tubes"
   text = 
 "
