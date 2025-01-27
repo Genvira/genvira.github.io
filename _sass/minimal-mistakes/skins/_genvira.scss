@@ -31,7 +31,7 @@ $dark-2: #393e46;
   --gv-form-background-color: #{$light-0};
   --gv-text-color: #{$dark-1};
   --gv-muted-text-color: #{$dark-2};
-  --gv-border-color: mix($light-2, $dark-2, 75%);
+  --gv-border-color: #{mix($light-2, $dark-2, 75%)};
   --gv-link-color: #{$dark-2};
 }
 
@@ -41,7 +41,7 @@ $dark-2: #393e46;
     --gv-form-background-color: #{$dark-0};
     --gv-text-color: #{$light-1};
     --gv-muted-text-color: #{$light-2};
-    --gv-border-color: mix($light-2, $dark-2, 25%);
+    --gv-border-color: #{mix($light-2, $dark-2, 25%)};
     --gv-link-color: #{$light-2};
   }
 }
