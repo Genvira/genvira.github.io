@@ -19,3 +19,24 @@
     opacity: 1;
   }
 }
+
+/*
+ * Transitions for colors (dark theme switching)
+ * ===============================================================
+ */
+
+$duration: $global-transition-duration;
+
+/* Transition for background, color, border */
+html, body,
+h1, .page__content h2, h2, h3, h4, h5, h6,
+p, a, span,
+form, input, textarea, select, label,
+div.masthead, nav.greedy-nav a, .feature__wrapper {
+  transition: background $duration, color $duration, border, $duration;
+}
+
+/* Disable background on elements for smoother transition */
+nav.greedy-nav {
+  background: initial;
+}
