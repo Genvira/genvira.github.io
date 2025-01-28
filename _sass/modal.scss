@@ -1,6 +1,10 @@
 /* Fixes and style for modals */
 
-.show-modal::before {
+/*
+ * Hide modal container
+ * Hide .show-modal::before that was set in utilities
+ */
+.modal-container, .show-modal::before {
   display: none;
 }
 
