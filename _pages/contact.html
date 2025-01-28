@@ -11,16 +11,16 @@ title: "Contact Us"
     <div id="contact-form" class="flex-column">
       <form action="https://formspree.io/f/xovvbkae" method="POST">
         <label for="name">Name</label>
-        <input type="text" name="name" required>
+        <input type="text" name="name" id="name" required>
 
         <label for="email">Email</label>
-        <input type="email" name="email" required>
+        <input type="email" name="email" id="email" required>
 
         <!-- add hidden Honeypot input to prevent spams -->
-        <input type="hidden" name="_gotcha" style="display:none !important">
+        <input type="hidden" name="_gotcha" id="_gotcha" style="display:none !important">
 
         <label for="purpose">Purpose</label>
-        <select name="purpose" required>
+        <select name="purpose" id="purpose" required>
           <option value="general">General Inquiries</option>
           <option value="products">Products</option>
           <option value="services">Services</option>
@@ -28,9 +28,9 @@ title: "Contact Us"
         </select>
 
         <label for="message">Message</label>
-        <textarea type="text" name="message" required></textarea>
+        <textarea type="text" name="message" id="message" required></textarea>
 
-        <button type="submit">Send</button>
+        <button type="submit" id="submit">Send</button>
       </form>
     </div>
 
