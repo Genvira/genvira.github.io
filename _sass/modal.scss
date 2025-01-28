@@ -42,3 +42,13 @@
 
   background: $code-background-color;
 }
+
+/*
+ * Prevent scrolling when modal is showing
+ * =======================================
+ */
+/* uncss: ignore */
+html:has(.show-modal) {
+  /* Note: Scrollbar disappearing can cause reflow */
+  overflow: hidden;
+}
