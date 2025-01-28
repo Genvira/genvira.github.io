@@ -29,6 +29,7 @@ $dark-2: mix(#404040, $blue, 98%);
 :root {
   --gv-background-color: #{$light-1};
   --gv-form-background-color: #{$light-0};
+  --gv-code-background-color: #{$light-2};
   --gv-text-color: #{$dark-1};
   --gv-muted-text-color: #{$dark-2};
   --gv-border-color: #{mix($light-2, $dark-2, 75%)};
@@ -39,6 +40,7 @@ $dark-2: mix(#404040, $blue, 98%);
   :root {
     --gv-background-color: #{$dark-1};
     --gv-form-background-color: #{$dark-0};
+    --gv-code-background-color: #{$dark-2};
     --gv-text-color: #{$light-1};
     --gv-muted-text-color: #{$light-2};
     --gv-border-color: #{mix($light-2, $dark-2, 25%)};
@@ -49,6 +51,7 @@ $dark-2: mix(#404040, $blue, 98%);
 /* Colors */
 $background-color: var(--gv-background-color);
 $form-background-color: var(--gv-form-background-color);
+$code-background-color: var(--gv-code-background-color);
 $text-color: var(--gv-text-color);
 $muted-text-color: var(--gv-muted-text-color);
 $primary-color: $blue;
