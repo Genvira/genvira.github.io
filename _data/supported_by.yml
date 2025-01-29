@@ -20,9 +20,9 @@
   aspect_ratio: "98.2 / 35.35"
   alt: Invest Ottawa
   margin_bottom: 1em
-  class: dark-theme-invert
+  class: dark-theme-outline
 - url: https://www.obio.ca/
   image_path: /assets/images/supported-by/obio.svg
   aspect_ratio: "144.198 / 44.715"
   alt: Obio
-  class: dark-theme-invert
+  class: dark-theme-outline
