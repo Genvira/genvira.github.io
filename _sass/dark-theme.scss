@@ -4,19 +4,19 @@
  */
 
 :root {
- color-scheme: light dark;
+  color-scheme: light dark;
 }
 
 @media (prefers-color-scheme: dark) {
- .dark-theme-invert {
-  filter: invert(1) hue-rotate(180deg);
- }
+  .dark-theme-invert {
+    filter: invert(1) hue-rotate(180deg);
+  }
 
- .dark-theme-brighten {
-  filter: brightness(1.5);
- }
+  .dark-theme-brighten {
+    filter: brightness(1.5);
+  }
 
- .dark-theme-white {
-  filter: contrast(0) brightness(1.9);
- }
+  .dark-theme-white {
+    filter: contrast(0) brightness(1.9);
+  }
 }
