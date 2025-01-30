@@ -23,6 +23,8 @@
   class: dark-theme-outline
 - url: https://www.obio.ca/
   image_path: /assets/images/supported-by/obio.svg
-  aspect_ratio: "144.198 / 44.715"
+  aspect_ratio: "1563 / 432"
   alt: Obio
-  class: dark-theme-outline
+  source:
+    - srcset: /assets/images/supported-by/obio-dark.svg
+      media: "(prefers-color-scheme: dark)"

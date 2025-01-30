@@ -198,12 +198,14 @@ figure {
   margin: 2em 0;
 
   img,
+  picture,
   iframe,
   .fluid-width-video-wrapper {
     margin-bottom: 1em;
   }
 
-  img {
+  img,
+  picture {
     width: 100%;
     border-radius: $border-radius;
     -webkit-transition: $global-transition;
@@ -216,7 +218,8 @@ figure {
 
   &.half {
     > a,
-    > img {
+    > img,
+    > picture {
       @include breakpoint($small) {
         width: calc(50% - 0.5em);
       }
@@ -229,7 +232,8 @@ figure {
 
   &.third {
     > a,
-    > img {
+    > img,
+    > picture {
       @include breakpoint($small) {
         width: calc(33.3333% - 0.5em);
       }
@@ -322,6 +326,7 @@ q,
 span,
 figure,
 img,
+picture,
 h1,
 h2,
 header,
