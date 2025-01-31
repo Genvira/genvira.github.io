@@ -88,10 +88,12 @@ head_scripts:
         };
         var map = new L.map('map', mapOptions)
 
-        L.tileLayer(provider, {
+        var tileLayerOptions = {
             maxZoom: 19,
-            attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-        }).addTo(map);
+            attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+            className: 'map-tiles',
+        };
+        L.tileLayer(provider, tileLayerOptions).addTo(map);
 
         L.marker(mapOptions["center"]).addTo(map)
           .bindPopup('We are here: <br> 310 Hunt Club Rd, Suite 304')

@@ -1,0 +1,60 @@
+/*
+  Extra styling for the map
+
+  Mainly for dark theme
+  ==============================
+*/
+
+:root {
+  /* Filter for turning map tiles to dark theme */
+  --map-tiles-filter: brightness(0.6) invert(1) contrast(3) hue-rotate(200deg)
+    saturate(0.3) brightness(0.7);
+}
+
+/* uncss: ignore */
+/* Class name is defined in the tileLayer options in the JS */
+.map-tiles {
+  transition: filter $global-transition-duration;
+
+  @media (prefers-color-scheme: dark) {
+    filter: var(--map-tiles-filter, none);
+  }
+}
+
+/* Theme aware colors for popup */
+div.leaflet-popup-content-wrapper,
+div.leaflet-popup-tip {
+  transition:
+    background $global-transition-duration,
+    color $global-transition-duration;
+
+  background: $background-color;
+  color: $text-color;
+}
+
+/* Theme aware colors for control bar */
+div.leaflet-bar a {
+  transition:
+    background $global-transition-duration,
+    border-bottom $global-transition-duration,
+    color $global-transition-duration;
+
+  background-color: $background-color;
+  border-bottom: 1px solid $border-color;
+  color: $text-color;
+}
+
+/* Theme aware colors for the attribution */
+div.leaflet-container div.leaflet-control-attribution {
+  transition:
+    background $global-transition-duration,
+    color $global-transition-duration;
+
+  background-color: $background-color;
+  color: $text-color;
+}
+div.leaflet-container a {
+  transition: color $global-transition-duration;
+
+  color: $link-color;
+}
