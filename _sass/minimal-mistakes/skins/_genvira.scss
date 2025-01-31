@@ -2,7 +2,7 @@
    Genvira skin
    ========================================================================== */
 
-@import "../variables";
+$color-space: oklab !default;
 
 /*
  * Colors
@@ -12,10 +12,10 @@
 /* Brand colors */
 $blue: #00afef;
 $green: #00a859;
-$red: #EC3438;
-$orange: #F69734;
-$purple: #3E4095;
-$pink: #EB288F;
+$red: #ec3438;
+$orange: #f69734;
+$purple: #3e4095;
+$pink: #eb288f;
 
 /* Theme base colors */
 $light-0: mix(#fff, $blue, 98%);
@@ -60,7 +60,12 @@ $footer-background-color: mix($dark-2, $primary-color, 75%);
 $link-color: var(--gv-link-color);
 $masthead-link-color: $text-color;
 $masthead-link-color-hover: $text-color;
-$navicon-link-color-hover: color-mix(in $color-space, $light-2, $text-color, 80%);
+$navicon-link-color-hover: color-mix(
+  in $color-space,
+  $light-2,
+  $text-color,
+  80%
+);
 
 .page__footer {
   color: $light-2 !important; // override
@@ -73,10 +78,9 @@ $navicon-link-color-hover: color-mix(in $color-space, $light-2, $text-color, 80%
 .author__urls.social-icons i,
 .author__urls.social-icons .svg-inline--fa,
 .page__footer-follow .social-icons i,
-.page__footer-follow .social-icons .svg-inline--fa  {
+.page__footer-follow .social-icons .svg-inline--fa {
   color: inherit;
 }
-
 
 /*
  * Typography
@@ -84,10 +88,19 @@ $navicon-link-color-hover: color-mix(in $color-space, $light-2, $text-color, 80%
  */
 
 /* System typefaces */
-$sans-serif: 'Atkinson Hyperlegible', -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
+$sans-serif:
+  "Atkinson Hyperlegible",
+  -apple-system,
+  BlinkMacSystemFont,
+  "Roboto",
+  "Segoe UI",
+  "Helvetica Neue",
+  "Lucida Grande",
+  Arial,
+  sans-serif;
 
 /* Sans-serif typefaces */
 /* Not provided: Not free */
-$century-gothic: 'Century Gothic', 'Levenim MT', $sans-serif;
+$century-gothic: "Century Gothic", "Levenim MT", $sans-serif;
 
 $header-font-family: $century-gothic;
