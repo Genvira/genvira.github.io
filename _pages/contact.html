@@ -38,25 +38,33 @@ head_scripts:
     <!-- Contact form -->
     <div id="contact-form" class="flex-column">
       <form action="https://formspree.io/f/xovvbkae" method="POST">
-        <label for="name">Name</label>
-        <input type="text" name="name" id="name" required>
+        <label>
+          <span>Name</span>
+          <input type="text" name="name" id="name" required>
+        </label>
 
-        <label for="email">Email</label>
-        <input type="email" name="email" id="email" required>
+        <label>
+          <span>Email</span>
+          <input type="email" name="email" id="email" required>
+        </label>
 
         <!-- add hidden Honeypot input to prevent spams -->
         <input type="hidden" name="_gotcha" id="_gotcha" style="display:none !important">
 
-        <label for="purpose">Purpose</label>
-        <select name="purpose" id="purpose" required>
-          <option value="general">General Inquiries</option>
-          <option value="products">Products</option>
-          <option value="services">Services</option>
-          <option value="other">Other</option>
-        </select>
+        <label>
+          <span>Purpose</span>
+          <select name="purpose" id="purpose" required>
+            <option value="general">General Inquiries</option>
+            <option value="products">Products</option>
+            <option value="services">Services</option>
+            <option value="other">Other</option>
+          </select>
+        </label>
 
-        <label for="message">Message</label>
-        <textarea type="text" name="message" id="message" required></textarea>
+        <label>
+          <span>Message</span>
+          <textarea type="text" name="message" id="message" required></textarea>
+        </label>
 
         <button type="submit" id="submit" class="btn btn--large center">Send</button>
       </form>

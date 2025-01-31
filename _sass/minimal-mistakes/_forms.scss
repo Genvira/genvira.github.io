@@ -2,6 +2,14 @@
    Forms
    ========================================================================== */
 
+/* Fallback values for some colors */
+$blue: blue !default;
+$green: green !default;
+$red: red !default;
+$orange: orange !default;
+$purple: purple !default;
+$pink: pink !default;
+
 form {
   margin-bottom: 5px;
   padding: 1em;
@@ -70,6 +78,13 @@ label {
   select {
     display: block;
   }
+}
+
+label:has(input, textarea, select) {
+  display: inline-block;
+  width: 100%;
+  padding: 0.25em;
+  margin-bottom: 0.5em;
 }
 
 input,
@@ -209,7 +224,8 @@ textarea:focus {
   border-color: $primary-color;
   outline: 0;
   outline: thin dotted \9;
-  box-shadow: inset 0 1px 3px rgba($text-color, 0.06),
+  box-shadow:
+    inset 0 1px 3px rgba($text-color, 0.06),
     0 0 5px rgba($primary-color, 0.7);
 }
 
@@ -345,4 +361,15 @@ select:focus {
   top: 50%;
   inset-inline-start: 50%;
   z-index: 11;
+}
+
+/*
+     Required field marker
+     The input element must be inside the label for it.
+     And the label text must be enclosed in an element (span)
+     ========================================================================== */
+
+label:has(> :required) :first-child::after {
+  content: "*";
+  color: $red;
 }
