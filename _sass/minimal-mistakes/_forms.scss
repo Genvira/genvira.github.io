@@ -373,3 +373,7 @@ label:has(> :required) :first-child::after {
   content: "*";
   color: $red;
 }
+
+form :user-invalid {
+  outline: 1px solid $red;
+}
