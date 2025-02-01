@@ -374,6 +374,15 @@ label:has(> :required) :first-child::after {
   color: $red;
 }
 
+select:invalid {
+  color: $muted-text-color;
+  font-style: italic;
+
+  option {
+    font-style: initial;
+  }
+}
+
 form :user-invalid {
   outline: 1px solid $red;
 }
