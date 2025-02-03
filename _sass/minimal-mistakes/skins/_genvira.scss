@@ -67,6 +67,12 @@ $navicon-link-color-hover: color-mix(
   80%
 );
 
+$success-color: $green;
+$warning-color: $orange;
+$danger-color: $red;
+$info-color: mix(#fff, $blue, 60%);
+$notice-background-mix: 70%;
+
 .page__footer {
   color: $light-2 !important; // override
 }
