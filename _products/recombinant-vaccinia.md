@@ -6,7 +6,7 @@ published: no
 number: 2
 
 header:
-  teaser: /assets/images/products/recombinant-vaccinia/vaccinia-750.jpg
+  teaser: /assets/images/products/recombinant-vaccinia/vaccinia-300.jpg
   overlay_image: /assets/images/products/recombinant-vaccinia/vaccinia-1280.jpg
   # overlay_filter: 0.3
   show_overlay_excerpt: false

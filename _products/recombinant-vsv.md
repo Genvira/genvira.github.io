@@ -6,8 +6,8 @@ published: no
 number: 1
 
 header:
-  teaser: https://upload.wikimedia.org/wikipedia/commons/1/1a/Vesicular_stomatitis_virus_%28VSV%29_EM_18_lores.jpg
-  overlay_image: https://upload.wikimedia.org/wikipedia/commons/1/1a/Vesicular_stomatitis_virus_%28VSV%29_EM_18_lores.jpg
+  teaser: /assets/images/products/recombinant-vsv/vsv-300.jpg
+  overlay_image: /assets/images/products/recombinant-vsv/vsv.jpg
   # overlay_filter: 0.3
   show_overlay_excerpt: false
 ---

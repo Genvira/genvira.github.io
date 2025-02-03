@@ -6,8 +6,8 @@ last_modified_at: 2025-01-16
 number: 0
 
 header:
-  teaser: https://images.pexels.com/photos/3992933/pexels-photo-3992933.jpeg?auto=compress&cs=tinysrgb&w=420&h=250&dpr=1
-  overlay_image: https://images.pexels.com/photos/3992933/pexels-photo-3992933.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1
+  teaser: /assets/images/products/sars-pseudovirus/pexels-photo-3992933-300.jpeg
+  overlay_image: /assets/images/products/sars-pseudovirus/pexels-photo-3992933-1049.jpeg
   overlay_filter: 0.3
   show_overlay_excerpt: false
 
