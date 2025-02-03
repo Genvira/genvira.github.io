@@ -3,7 +3,6 @@
    ========================================================================== */
 
 @media print {
-
   [hidden] {
     display: none;
   }
@@ -176,7 +175,8 @@
 
   a[href^='http://']:after,
   a[href^='https://']:after,
-  a[href^='ftp://']:after {
+  a[href^='ftp://']:after
+  {
     content: " (" attr(href) ")";
     font-size: 80%;
   }
@@ -210,12 +210,12 @@
   }
 
   a.no-reformat:after {
-    content: '';
+    content: "";
   }
 
   abbr[title].no-reformat:after,
   acronym[title].no-reformat:after {
-    content: '';
+    content: "";
   }
 
   .page__hero-caption {
@@ -228,7 +228,7 @@
     }
   }
 
-/*
+  /*
    Hide the following elements on print
    ========================================================================== */
 
@@ -248,5 +248,41 @@
   .adsbygoogle {
     display: none !important;
     height: 1px !important;
+  }
+
+  /*
+    Modals print styling
+    ====================
+   */
+
+  /*
+    Hide main and breadcrumbs that would be in the background
+  */
+  html:has(.show-modal) {
+    #main,
+    nav {
+      display: none;
+    }
+  }
+
+  /*
+    Style the modal
+
+    Fill the entire screen
+    Basic black/white colors
+    No border
+  */
+  html .modal {
+    width: 100vw;
+    height: 100vh;
+    max-width: initial;
+    max-height: initial;
+
+    background-color: white;
+    color: black;
+
+    border: initial;
+    border-radius: initial;
+    box-shadow: initial;
   }
 }
