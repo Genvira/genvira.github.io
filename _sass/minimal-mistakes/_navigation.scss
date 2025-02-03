@@ -131,6 +131,10 @@
     border: 1px solid color-mix($text-color, $border-color, 25%);
     border-radius: $border-radius;
 
+    &:visited {
+      color: $muted-text-color;
+    }
+
     &:hover {
       background-color: $muted-text-color;
       color: light-dark(
