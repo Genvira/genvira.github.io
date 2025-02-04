@@ -1,28 +1,36 @@
-
 $small-size: 5rem;
 $medium-size: 8rem;
 
 /* Square image */
-.feature-row__square-image img {
-  aspect-ratio: 1 / 1;
-  object-fit: cover;
+.feature-row__square-image {
+  img,
+  svg {
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+  }
 }
 
 /* Smaller images in feature row */
 .feature-row__small-image .archive__item-teaser {
   text-align: center;
 }
-.feature-row__small-image img {
-  max-height: $small-size;
-  width: initial;
+.feature-row__small-image {
+  img,
+  svg {
+    max-height: $small-size;
+    width: initial;
+  }
 }
 /* Medium sized images */
 .feature-row__medium-image .archive__item-teaser {
   text-align: center;
 }
-.feature-row__medium-image img {
-  max-height: $medium-size;
-  width: initial;
+.feature-row__medium-image {
+  img,
+  svg {
+    max-height: $medium-size;
+    width: initial;
+  }
 }
 
 /* Small and square image */

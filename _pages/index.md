@@ -12,63 +12,67 @@ title: Genvira
 excerpt: >
   We Build Innovative Viral Based Therapeutics<br />
 
+head_scripts:
+  - url: /assets/js/plugins/svg-inject.min.js
+    integrity: "sha384-GRjHI4liW5i9zgJ2uDixThld0XbZxLQAz2S4BI8F28jdFcRNkSheOhj/Dd4HjyD/" 
+
 feature_row:
   # Row 1
   - image_path: /assets/images/home/svg-icons/virus-lab-research-test-tube.svg
+    image_type: svg
     title: Cell and Viral Engineering
     excerpt: Delivering high-quality engineered vectors and cells
     item_class: "feature-row__small-image feature-row__square-image"
-    image_class: dark-theme-invert
 
   - image_path: /assets/images/home/svg-icons/route.svg
+    image_type: svg
     title: End-to-End Engineering
     excerpt: From product design to engineering, production, & testing
     item_class: "feature-row__small-image feature-row__square-image"
-    image_class: dark-theme-invert
 
   - image_path: /assets/images/home/svg-icons/heartbeat.svg
+    image_type: svg
     title: Formulation
     excerpt: Achieve viral stability before and after delivery
     item_class: "feature-row__small-image feature-row__square-image"
-    image_class: dark-theme-invert
 
   # Row 2
   - title: Responsive layouts
+    image_type: svg
     image_path: /assets/images/home/svg-icons/flask.svg
     excerpt: In vitro viral vector characterization
     item_class: "feature-row__small-image feature-row__square-image"
-    image_class: dark-theme-invert
 
   - title: Animal Models
+    image_type: svg
     image_path: /assets/images/home/svg-icons/veterinary-care.svg
     excerpt: In vivo efficacy studies
     item_class: "feature-row__small-image feature-row__square-image"
-    image_class: dark-theme-invert
 
   - title: Process Development and Small-Scale Production
+    image_type: svg
     image_path: /assets/images/home/svg-icons/pills-3-bold-duotone.svg
     excerpt: Optimization of process and yield
     item_class: "feature-row__small-image feature-row__square-image"
-    image_class: dark-theme-invert
 
   # Row 3
   - title: FDA Regulatory Filings
+    image_type: svg
     image_path: /assets/images/home/svg-icons/document-medicine-bold-duotone.svg
     excerpt: IND & CMC filing expertise
     item_class: "feature-row__small-image feature-row__square-image"
-    image_class: dark-theme-invert
 
   - title: GLP-Like Studies
+    image_type: svg
     image_path: /assets/images/home/svg-icons/lab-research-rounded.svg
     excerpt: Studies under GLP guideline
     item_class: "feature-row__small-image feature-row__square-image"
-    image_class: dark-theme-invert
 
   - title: MVS to BDS Production
+    image_type: svg
     image_path: /assets/images/home/svg-icons/heart-plus-rounded.svg
     excerpt: Transition and scalability consultation
     item_class: "feature-row__small-image feature-row__square-image"
-    image_class: dark-theme-invert
 
 supported_by:
   - url: https://feddev-ontario.canada.ca/
