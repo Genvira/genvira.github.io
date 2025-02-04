@@ -13,8 +13,7 @@ excerpt: >
   We Build Innovative Viral Based Therapeutics<br />
 
 head_scripts:
-  - url: /assets/js/plugins/svg-inject.min.js
-    integrity: "sha384-GRjHI4liW5i9zgJ2uDixThld0XbZxLQAz2S4BI8F28jdFcRNkSheOhj/Dd4HjyD/" 
+  - url: /assets/js/plugins/svg-inject.js
 
 feature_row:
   # Row 1
