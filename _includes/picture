@@ -20,6 +20,7 @@
     {% if include.style %}style="{{ include.style }}"{% endif %}
     {% if include.class %}class="{{ include.class }}"{% endif %}
     {% if include.onload %}onload="{{ include.onload }}"{% endif %}
+    {% if include.onerror %}onerror="{{ include.onerror }}"{% endif %}
   />
 {% if include.source %}
 </picture>

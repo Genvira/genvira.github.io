@@ -44,6 +44,7 @@ Based heavily on gallery
           picture_class=picture_class
           picture_style=picture_style
           onload="SVGInject(this)"
+          onerror="this.style.visibility = 'visible'"
         %}
       {% else %}
         {% include picture src=rel_path
