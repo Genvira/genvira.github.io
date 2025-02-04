@@ -1,27 +1,29 @@
 - url: https://feddev-ontario.canada.ca/
   image_path: /assets/images/supported-by/feddev-canada.svg
+  type: svg
   dark_image_path: /assets/images/supported-by/feddev-canada-dark.svg
   aspect_ratio: "135.373 / 35.947"
   alt: FedDev
-  class: dark-theme-white
 - url: https://www.ontario.ca/page/government-ontario
   image_path: /assets/images/supported-by/province-of-ontario.svg
+  type: svg
   aspect_ratio: "36.373 / 9.093"
   alt: Government of Ontario
-  class: dark-theme-invert
+  # class: dark-theme-invert
 - url: https://www.mitacs.ca/
   image_path: /assets/images/supported-by/mitacs-logo-blue.svg
   aspect_ratio: "865.466 / 145.971"
   alt: Mitacs
   class: dark-theme-brighten
 - url: https://www.investottawa.ca/
-  class: dark-theme-brighten
   image_path: /assets/images/supported-by/invest-ottawa.svg
+  type: svg
   aspect_ratio: "98.2 / 35.35"
   alt: Invest Ottawa
   margin_bottom: 1em
-  class: dark-theme-outline
+  # class: dark-theme-outline
 - url: https://www.obio.ca/
   image_path: /assets/images/supported-by/obio-responsive.svg
+  type: svg
   aspect_ratio: "1563 / 432"
   alt: Obio

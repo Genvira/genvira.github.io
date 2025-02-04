@@ -37,4 +37,7 @@
     <stop offset=".993" stop-color="#55b74d"/>
   </linearGradient>
   <path fill="url(#g)" d="M58.6 19.8h.5v15.3h-.5z"/>
+  <style>
+    .st7 { fill: currentcolor; }
+  </style>
 </svg>

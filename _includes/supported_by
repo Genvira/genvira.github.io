@@ -34,14 +34,27 @@ Based heavily on gallery
       {%- endunless -%}
     {%- endcapture %}
 
-    {% include picture src=rel_path
-      source=img.source
-      class=img.class
-      style=img_style
-      alt=img.alt
-      picture_class=picture_class
-      picture_style=picture_style
-    %}
+    {% case img.type %}
+      {% when "svg" %}
+        {% include picture src=rel_path
+          source=img.source
+          class=img.class
+          style=img_style
+          alt=img.alt
+          picture_class=picture_class
+          picture_style=picture_style
+          onload="SVGInject(this)"
+        %}
+      {% else %}
+        {% include picture src=rel_path
+          source=img.source
+          class=img.class
+          style=img_style
+          alt=img.alt
+          picture_class=picture_class
+          picture_style=picture_style
+        %}
+    {% endcase %}
 
   {% if img.url %}</a>{% endif %}
   {% endfor %}

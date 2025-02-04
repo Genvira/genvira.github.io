@@ -1,6 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1563 432">
   <title>OBIO®</title>
   <style>
+    * {
+      transition: fill 0.3s;
+    }
     .t {
       fill: #132a4c;
     }
