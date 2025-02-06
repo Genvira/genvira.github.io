@@ -72,23 +72,6 @@ feature_row:
     image_path: /assets/images/home/svg-icons/heart-plus-rounded.svg
     excerpt: Transition and scalability consultation
     item_class: "feature-row__small-image feature-row__square-image"
-
-supported_by:
-  - url: https://feddev-ontario.canada.ca/
-    image_path: /assets/images/supported-by/feddev-canada.svg
-    alt: FedDev
-  - url: https://www.ontario.ca/page/government-ontario
-    image_path: /assets/images/supported-by/province-of-ontario.svg
-    alt: Government of Ontario
-  - url: https://www.mitacs.ca/
-    image_path: /assets/images/supported-by/mitacs-logo-blue.svg
-    alt: Mitacs
-  - url: https://www.investottawa.ca/
-    image_path: /assets/images/supported-by/invest-ottawa.svg
-    alt: Invest Ottawa
-  - url: https://www.obio.ca/
-    image_path: /assets/images/supported-by/obio.svg
-    alt: Obio
 ---
 
 <!-- Three images section -->
