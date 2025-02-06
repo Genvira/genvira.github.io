@@ -21,8 +21,11 @@ Based heavily on gallery
   style="row-gap: 0.5rem; column-gap: 0.5rem; align-items: center">
   {% for img in gallery %}
   {% if img.url %}
-  <a href="{{ img.url | relative_url }}" style="display: flex; align-items: center" {% if img.title
-    %}title="{{ img.title }}" {% endif %}> {% endif %}
+  <a href="{{ img.url | relative_url }}"
+    style="display: flex; align-items: center;"
+    {% if img.title %}title="{{ img.title }}" {% endif %}
+    {% if img.alt %}aria-label="{{ img.alt }}"{% endif %}
+  > {% endif %}
 
     {% assign rel_path = img.image_path | relative_url %}
     {% capture img_style -%}
