@@ -75,7 +75,10 @@ plugins:
   - jekyll-feed
   - jemoji
   - jekyll-include-cache
+  - jekyll-uncss-hook
   - jekyll-minifier
+    # jekyll-subresource-integrity-hook must run last
+  - jekyll-subresource-integrity-hook
 
 footer:
   links:
@@ -125,7 +128,7 @@ uncss:
   files:                  # html files to consider, globs are supported; default: **/*.html
     - "*.html"
     - "**/*.html"
-  compress: true          # compress resulting css with sass; default: false
+  # compress: true          # compress resulting css with sass; default: false
   ignore:                 # always keep rules for these selectors; default: none
     - ".show-modal"         # Styling for modal backdrop (shown)
     - ".is--hidden"         # Hide the page content when searching
@@ -133,11 +136,10 @@ uncss:
     - ".search-content .archive__item"  # Search items width
   media:                  # additional media queries to consider; default: undefined
     - print
-  timeout: 100            # how long to wait for the JS to be loaded in milliseconds; default: undefined
-  # banner: false           # should the output include a banner comment; default: undefined
+  timeout: 1000            # how long to wait for the JS to be loaded in milliseconds; default: undefined
+  banner: false           # should the output include a banner comment; default: undefined
 
 jekyll-minifier:
-  compress_css: false     # uncss takes care of this
   # Enable ES6 syntax
   uglifier_args:
     harmony: true

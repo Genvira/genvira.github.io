@@ -23,7 +23,13 @@ group :jekyll_plugins do
   gem "jemoji"
   gem "jekyll-include-cache"
   gem "jekyll-algolia"
+  gem "jekyll-uncss-hook",
+    git: "https://github.com/Genvira/jekyll-uncss-hook"
   gem "jekyll-minifier"
+  # sri-hook must be run last
+  gem "jekyll-subresource-integrity-hook",
+    git: "https://github.com/Genvira/jekyll-subresource-integrity-hook",
+    branch: "dev"
 end
 
 # Dependency of jekyll-uncss
@@ -41,4 +47,4 @@ gem "wdm", "~> 0.1" if Gem.win_platform?
 
 # Lock `http_parser.rb` gem to `v0.6.x` on JRuby builds since newer versions of the gem
 # do not have a Java counterpart.
-gem "http_parser.rb", "~> 0.6.0", :platforms => [:jruby]
+gem "http_parser.rb", "~> 0.6.0", platforms: [:jruby]
