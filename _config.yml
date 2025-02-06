@@ -134,6 +134,11 @@ uncss:
     - ".is--hidden"         # Hide the page content when searching
     - ".search-content.is--visible"     # When the search is visible
     - ".search-content .archive__item"  # Search items width
+    # SVG injection
+    - "/\\.*svg/"
+    # - "figure svg"
+    # - ".feature-row__small-image.feature-row__square-image svg"
+    # - ".feature-row__medium-image.feature-row__square-image svg"
   media:                  # additional media queries to consider; default: undefined
     - print
   timeout: 1000            # how long to wait for the JS to be loaded in milliseconds; default: undefined
