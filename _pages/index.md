@@ -15,6 +15,28 @@ excerpt: >
 head_scripts:
   - url: /assets/js/plugins/svg-inject.js
 
+viral_engineering:
+  - image_path: /assets/images/home/stock-images/pexels-photo-5726794-600.webp
+    title: Viral Engineering
+    alt: A woman looking through a microscope 
+    excerpt: |
+      Genvira specializes in viral engineering. We design, construct and characterize customized RNA/DNA viruses which are non-pathogenic, long term stability and have low immunogenicity and high transduction efficiency. These viruses are utilized in:
+      - Cancer Immunotherapy
+      - Gene therapy
+      - Vaccines
+
+cancer_immunotherapy_gene_therapy:
+  - image_path: /assets/images/home/stock-images/pexels-photo-4033148-600.webp
+    title: Cancer Immunotherapy & Gene Therapy
+    alt: Man Doing A Sample Test In The Laboratory 
+    excerpt: Our bioengineered DNA viruses such as Adeno-associated viruses (AAVs) and Myxoma viruses are used to help deliver genes of interest into target mammalian cells and tissues which then generates new instructions for the cells to control the progression of diseases such as cancers, retinal disorders, etc. We also conduct a wide range of functional bioassays to screen and test the potency and immunogenicity of our bioengineered viruses.
+
+vaccines:
+  - image_path: /assets/images/home/stock-images/pexels-photo-3735747-600.webp
+    title: Viral Engineering
+    alt: Person Holding Test Tubes
+    excerpt: Our world-class laboratory and experts can create a vaccine for all your research and clinical needs. For example, because our SARS CoV-2 pseudoviruses don’t replicate, they are safe and can easily be applicable in vitro and in vivo studies by researchers who don’t have BSL3 and BSL laboratories.
+
 feature_row:
   # Row 1
   - image_path: /assets/images/home/svg-icons/virus-lab-research-test-tube.svg
@@ -75,40 +97,23 @@ feature_row:
 ---
 
 <!-- Three images section -->
-{%
-  include image_with_text
-  reverse="true"
-  image_path="/assets/images/home/stock-images/pexels-photo-5726794-600.webp"
-  alt="A woman looking through a microscope"
-  text = 
-"
-### Viral Engineering
-Genvira specializes in viral engineering. We design, construct and characterize customized RNA/DNA viruses which are non-pathogenic, long term stability and have low immunogenicity and high transduction efficiency. These viruses are utilized in:
-- Cancer Immunotherapy
-- Gene therapy
-- Vaccines
-"
+{% include feature_row
+  id="viral_engineering"
+  type="left"
+  hx="h3"
+  class="no-bottom-border"
 %}
-{%
-  include image_with_text
-  image_path="/assets/images/home/stock-images/pexels-photo-4033148-600.webp"
-  alt="Man Doing A Sample Test In The Laboratory"
-  text = 
-"
-### Cancer Immunotherapy & Gene Therapy
-Our bioengineered DNA viruses such as Adeno-associated viruses (AAVs) and Myxoma viruses are used to help deliver genes of interest into target mammalian cells and tissues which then generates new instructions for the cells to control the progression of diseases such as cancers, retinal disorders, etc. We also conduct a wide range of functional bioassays to screen and test the potency and immunogenicity of our bioengineered viruses.
-"
+{% include feature_row
+  id="cancer_immunotherapy_gene_therapy"
+  type="right"
+  hx="h3"
+  class="no-bottom-border"
 %}
-{%
-  include image_with_text
-  reverse="true"
-  image_path="/assets/images/home/stock-images/pexels-photo-3735747-600.webp"
-  alt="Person Holding Test Tubes"
-  text = 
-"
-### Vaccines
-Our world-class laboratory and experts can create a vaccine for all your research and clinical needs. For example, because our SARS CoV-2 pseudoviruses don’t replicate, they are safe and can easily be applicable in vitro and in vivo studies by researchers who don’t have BSL3 and BSL laboratories.
-"
+{% include feature_row
+  id="vaccines"
+  type="left"
+  hx="h3"
+  class="no-bottom-border"
 %}
 <!-- End Three images section -->
 

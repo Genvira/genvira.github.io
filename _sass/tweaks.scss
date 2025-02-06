@@ -5,18 +5,22 @@
 /*
  * Fix follow button appearing in nonexistent sidebar
  * when screen width < 64em
- */ 
+ */
 .author__urls-wrapper button {
-    display: none;
+  display: none;
 }
 
 /* Re-do the drop-shadow to apply to more than the text */
 /* It will also apply to the outline of the button and other things.  */
-.page__hero--overlay .page__title, .page__hero--overlay .page__meta, .page__hero--overlay .comment__date, .page__hero--overlay .page__lead, .page__hero--overlay .btn {
-    text-shadow: None;
+.page__hero--overlay .page__title,
+.page__hero--overlay .page__meta,
+.page__hero--overlay .comment__date,
+.page__hero--overlay .page__lead,
+.page__hero--overlay .btn {
+  text-shadow: None;
 }
 .page__hero--overlay .wrapper {
-    filter: drop-shadow(1px 1px 4px rgba(0, 0, 0, 0.5));
+  filter: drop-shadow(1px 1px 4px rgba(0, 0, 0, 0.5));
 }
 
 /*
@@ -25,9 +29,9 @@
  */
 
 @media (min-width: 80em) {
-    #main.wide {
-        max-width: 1440px;
-    }
+  #main.wide {
+    max-width: 1440px;
+  }
 }
 
 /*
@@ -43,8 +47,18 @@
  * =============================
  */
 /* uncss: ignore */
-.page__content h1 .header-link:focus, .page__content h2 .header-link:focus,
-.page__content h3 .header-link:focus, .page__content h4 .header-link:focus,
-.page__content h5 .header-link:focus, .page__content h6 .header-link:focus {
+.page__content h1 .header-link:focus,
+.page__content h2 .header-link:focus,
+.page__content h3 .header-link:focus,
+.page__content h4 .header-link:focus,
+.page__content h5 .header-link:focus,
+.page__content h6 .header-link:focus {
   opacity: 0.2;
+}
+
+/*
+ * _archive.scss feature__wrapper option for no bottom border
+ */
+.feature__wrapper.no-bottom-border {
+  border-bottom: initial;
 }
