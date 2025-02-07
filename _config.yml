@@ -128,17 +128,13 @@ uncss:
   files:                  # html files to consider, globs are supported; default: **/*.html
     - "*.html"
     - "**/*.html"
-  # compress: true          # compress resulting css with sass; default: false
   ignore:                 # always keep rules for these selectors; default: none
     - ".show-modal"         # Styling for modal backdrop (shown)
     - ".is--hidden"         # Hide the page content when searching
     - ".search-content.is--visible"     # When the search is visible
     - ".search-content .archive__item"  # Search items width
-    # SVG injection
-    - "/\\.*svg/"
-    # - "figure svg"
-    # - ".feature-row__small-image.feature-row__square-image svg"
-    # - ".feature-row__medium-image.feature-row__square-image svg"
+    - "/\\.*svg/"           # SVG injection
+    - "/.mfp-.*/"           # Magnific Popups
   media:                  # additional media queries to consider; default: undefined
     - print
   timeout: 1000            # how long to wait for the JS to be loaded in milliseconds; default: undefined
