@@ -1,0 +1,67 @@
+{% if include.id %}
+  {% assign gallery = page[include.id] %}
+{% else %}
+  {% assign gallery = page.gallery %}
+{% endif %}
+
+{% if include.layout %}
+{% assign gallery_layout = include.layout %}
+{% else %}
+{% if gallery.size == 2 %}
+{% assign gallery_layout = 'half' %}
+{% elsif gallery.size >= 3 %}
+{% assign gallery_layout = 'third' %}
+{% else %}
+{% assign gallery_layout = '' %}
+{% endif %}
+{% endif %}
+
+<figure class="{{ gallery_layout }} {{ include.class }}"
+  >
+  {% for img in gallery %}
+  {% if img.url %}
+  <a href="{{ img.url | relative_url }}"
+    style="display: flex; align-items: center;"
+    {% if img.title %}title="{{ img.title }}" {% endif %}
+    {% if img.alt %}aria-label="{{ img.alt }}"{% endif %}
+  > {% endif %}
+
+    {% assign rel_path = img.image_path | relative_url %}
+    {% capture img_style -%}
+      margin-bottom: {{ img.margin_bottom | default: 0 }}; {% if img.aspect_ratio %}aspect-ratio:{{ img.aspect_ratio }}{%- endif- %}{% if img.style %}; {{ img.style }}{%- endif -%}
+    {%- endcapture %}
+    {% capture picture_style -%}
+      {%- unless img.url -%}
+        display: flex; align-items: center
+      {%- endunless -%}
+    {%- endcapture %}
+
+    {% case img.type %}
+      {% when "svg" %}
+        {% include picture src=rel_path
+          source=img.source
+          class=img.class
+          style=img_style
+          alt=img.alt
+          picture_class=picture_class
+          picture_style=picture_style
+          onload="SVGInject(this)"
+          onerror="this.style.visibility = 'visible'"
+        %}
+      {% else %}
+        {% include picture src=rel_path
+          source=img.source
+          class=img.class
+          style=img_style
+          alt=img.alt
+          picture_class=picture_class
+          picture_style=picture_style
+        %}
+    {% endcase %}
+
+  {% if img.url %}</a>{% endif %}
+  {% endfor %}
+  {% if include.caption %}
+  <figcaption>{{ include.caption | markdownify | remove: "<p>" | remove: "</p>" }}</figcaption>
+  {% endif %}
+</figure>
