@@ -17,16 +17,26 @@
     <div class="archive__item {{ f.item_class }}">
       {% if f.image_path %}
       <div class="archive__item-teaser">
+
+        {% assign rel_path = f.image_path | relative_url %}
+
         {% case f.image_type %}
           {% when "svg" %}
-            <img src="{{ f.image_path | relative_url }}" alt="{% if f.alt %}{{ f.alt }}{% endif %}" {% if f.image_class
-              %}class="{{ f.image_class }}" {% endif %}
+            {% include picture src=rel_path
+              srcset=f.srcset
+              sizes=f.sizes
+              alt=f.alt
+              class=f.image_class
               onload="SVGInject(this)"
               onerror="this.style.visibility = 'visible'"
-              >
+            %}
           {% else %}
-            <img src="{{ f.image_path | relative_url }}" alt="{% if f.alt %}{{ f.alt }}{% endif %}" {% if f.image_class
-              %}class="{{ f.image_class }}" {% endif %}>
+            {% include picture src=rel_path
+              srcset=f.srcset
+              sizes=f.sizes
+              alt=f.alt
+              class=f.image_class
+            %}
         {% endcase %}
         {% if f.image_caption %}
         <span class="archive__item-caption">{{ f.image_caption | markdownify | remove: "<p>" | remove: "</p>" }}</span>

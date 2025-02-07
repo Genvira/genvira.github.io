@@ -15,8 +15,12 @@ excerpt: >
 head_scripts:
   - url: /assets/js/plugins/svg-inject.js
 
+# Three images section
 viral_engineering:
   - image_path: /assets/images/home/stock-images/pexels-photo-5726794-600.webp
+    srcset: "/assets/images/home/stock-images/pexels-photo-5726794-216.webp 216w, /assets/images/home/stock-images/pexels-photo-5726794-360.webp 360w, /assets/images/home/stock-images/pexels-photo-5726794-600.webp 600w, /assets/images/home/stock-images/pexels-photo-5726794-1000.webp 1000w"
+    sizes: (max-width 37.5em) calc(100vw-2em), 41vw
+    image_class: aspect-ratio__3-2
     title: Viral Engineering
     alt: A woman looking through a microscope 
     excerpt: |
@@ -27,12 +31,18 @@ viral_engineering:
 
 cancer_immunotherapy_gene_therapy:
   - image_path: /assets/images/home/stock-images/pexels-photo-4033148-600.webp
+    srcset: "/assets/images/home/stock-images/pexels-photo-4033148-216.webp 216w, /assets/images/home/stock-images/pexels-photo-4033148-360.webp 360w, /assets/images/home/stock-images/pexels-photo-4033148-600.webp 600w, /assets/images/home/stock-images/pexels-photo-4033148-1000.webp 1000w"
+    sizes: (max-width 37.5em) calc(100vw-2em), 41vw
+    image_class: aspect-ratio__3-2
     title: Cancer Immunotherapy & Gene Therapy
     alt: Man Doing A Sample Test In The Laboratory 
     excerpt: Our bioengineered DNA viruses such as Adeno-associated viruses (AAVs) and Myxoma viruses are used to help deliver genes of interest into target mammalian cells and tissues which then generates new instructions for the cells to control the progression of diseases such as cancers, retinal disorders, etc. We also conduct a wide range of functional bioassays to screen and test the potency and immunogenicity of our bioengineered viruses.
 
 vaccines:
   - image_path: /assets/images/home/stock-images/pexels-photo-3735747-600.webp
+    srcset: "/assets/images/home/stock-images/pexels-photo-3735747-216.webp 216w, /assets/images/home/stock-images/pexels-photo-3735747-360.webp 360w, /assets/images/home/stock-images/pexels-photo-3735747-600.webp 600w, /assets/images/home/stock-images/pexels-photo-3735747-1000.webp 1000w"
+    sizes: (max-width 37.5em) calc(100vw-2em), 41vw
+    image_class: aspect-ratio__3-2
     title: Viral Engineering
     alt: Person Holding Test Tubes
     excerpt: Our world-class laboratory and experts can create a vaccine for all your research and clinical needs. For example, because our SARS CoV-2 pseudoviruses don’t replicate, they are safe and can easily be applicable in vitro and in vivo studies by researchers who don’t have BSL3 and BSL laboratories.

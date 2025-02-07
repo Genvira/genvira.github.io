@@ -2,3 +2,8 @@ img,
 svg {
   border-radius: 4px;
 }
+
+.aspect-ratio__3-2 {
+  object-fit: cover;
+  aspect-ratio: 3/2;
+}

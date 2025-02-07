@@ -4,7 +4,8 @@ $medium-size: 8rem;
 /* Square image */
 .feature-row__square-image {
   img,
-  svg {
+  svg,
+  picture {
     aspect-ratio: 1 / 1;
     object-fit: cover;
   }
@@ -16,7 +17,8 @@ $medium-size: 8rem;
 }
 .feature-row__small-image {
   img,
-  svg {
+  svg,
+  picture {
     max-height: $small-size;
     width: initial;
   }
@@ -27,17 +29,26 @@ $medium-size: 8rem;
 }
 .feature-row__medium-image {
   img,
-  svg {
+  svg,
+  picture {
     max-height: $medium-size;
     width: initial;
   }
 }
 
 /* Small and square image */
-.feature-row__small-image.feature-row__square-image img {
-  height: $small-size;
+.feature-row__small-image.feature-row__square-image {
+  img,
+  svg,
+  picture {
+    height: $small-size;
+  }
 }
 /* Medium and square image */
-.feature-row__medium-image.feature-row__square-image img {
-  height: $medium-size;
+.feature-row__medium-image.feature-row__square-image {
+  img,
+  svg,
+  picture {
+    height: $medium-size;
+  }
 }
