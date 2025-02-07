@@ -22,7 +22,7 @@
 
   .dark-theme-outline {
     $shift: 0.1rem;
-    $blur: 0.3px;
+    $blur: 0.5px;
 
     filter: drop-shadow($shift 0 $blur $text-color)
       drop-shadow(0 $shift $blur $text-color)
