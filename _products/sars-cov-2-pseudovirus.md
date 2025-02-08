@@ -22,12 +22,10 @@ gallery:
     title: Image 2
   - image_path: /assets/images/products/sars-pseudovirus/image-3.webp
     url: /assets/images/products/sars-pseudovirus/image-3.webp
-    class: dark-theme-outline
     alt: Image 3
     title: Image 3
   - image_path: /assets/images/products/sars-pseudovirus/image-4.webp
     url: /assets/images/products/sars-pseudovirus/image-4.webp
-    class: dark-theme-outline
     alt: Image 4
     title: Image 4
 ---
