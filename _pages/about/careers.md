@@ -2,8 +2,10 @@
 permalink: about/careers/
 title: "Careers"
 
+layout: header-in-content
+
 excerpt: Thank you for your interest in Genvira Biosciences. There are no open positions at the moment. However, you may send your resume to [info@genvira.com](mailto:info@genvira.com) for potential future opportunities.
-breadcrumbs: false
+# breadcrumbs: false
 
 header:
   overlay_color: "#5e616c"
