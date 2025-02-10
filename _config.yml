@@ -117,10 +117,10 @@ collections:
 
 category_archive:
   type: liquid
-  path: /categories/
+  path: /posts/categories/
 tag_archive:
   type: liquid
-  path: /tags/
+  path: /posts/tags/
 
 uncss:
   stylesheets:            # a list of stylesheets to be processed; mandatory
