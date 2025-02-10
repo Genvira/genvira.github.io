@@ -135,6 +135,7 @@ uncss:
     - ".search-content .archive__item"  # Search items width
     - "/\\.*svg/"           # SVG injection
     - "/.mfp-.*/"           # Magnific Popups
+    - "/.header-link/"      # Header links (inserted by JS)
   media:                  # additional media queries to consider; default: undefined
     - print
   timeout: 1000            # how long to wait for the JS to be loaded in milliseconds; default: undefined
