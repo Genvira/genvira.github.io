@@ -27,9 +27,10 @@ gallery:
       - url: "/assets/images/products/sars-pseudovirus/image-2-360.webp"
         size: 360w
     sizes:
-      - "(min-width: 37.5em) 0.33vw"
-      - "(min-width: 64em) calc((100vw - 200px) / 3)"
       - "(min-width: 80em) calc((100vw - 300px) / 3)"
+      - "(min-width: 64em) calc((100vw - 200px) / 3)"
+      - "(min-width: 37.5em) calc(0.33vw - 2em)"
+      - calc(100vw - 2em)
     url: /assets/images/products/sars-pseudovirus/image-2.webp
     alt: Image 2
     title: Image 2
@@ -44,9 +45,10 @@ gallery:
       - url: "/assets/images/products/sars-pseudovirus/image-3-360.webp"
         size: 360w
     sizes:
-      - "(min-width: 37.5em) 0.33vw"
-      - "(min-width: 64em) calc((100vw - 200px) / 3)"
       - "(min-width: 80em) calc((100vw - 300px) / 3)"
+      - "(min-width: 64em) calc((100vw - 200px) / 3)"
+      - "(min-width: 37.5em) calc(0.33vw - 2em)"
+      - calc(100vw - 2em)
     url: /assets/images/products/sars-pseudovirus/image-3.webp
     alt: Image 3
     title: Image 3
@@ -59,9 +61,10 @@ gallery:
       - url: "/assets/images/products/sars-pseudovirus/image-4-270.webp"
         size: 270w
     sizes:
-      - "(min-width: 37.5em) 0.33vw"
-      - "(min-width: 64em) calc((100vw - 200px) / 3)"
       - "(min-width: 80em) calc((100vw - 300px) / 3)"
+      - "(min-width: 64em) calc((100vw - 200px) / 3)"
+      - "(min-width: 37.5em) calc(0.33vw - 2em)"
+      - calc(100vw - 2em)
     url: /assets/images/products/sars-pseudovirus/image-4.webp
     alt: Image 4
     title: Image 4
