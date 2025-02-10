@@ -17,14 +17,51 @@ gallery:
     alt: Table
     title: Table (image 1)
   - image_path: /assets/images/products/sars-pseudovirus/image-2.webp
+    srcset:
+      - url: "/assets/images/products/sars-pseudovirus/image-2.webp"
+        size: 1997w
+      - url: "/assets/images/products/sars-pseudovirus/image-2-1000.webp"
+        size: 1000w
+      - url: "/assets/images/products/sars-pseudovirus/image-2-600.webp"
+        size: 600w
+      - url: "/assets/images/products/sars-pseudovirus/image-2-360.webp"
+        size: 360w
+    sizes:
+      - "(min-width: 37.5em) 0.33vw"
+      - "(min-width: 64em) calc((100vw - 200px) / 3)"
+      - "(min-width: 80em) calc((100vw - 300px) / 3)"
     url: /assets/images/products/sars-pseudovirus/image-2.webp
     alt: Image 2
     title: Image 2
   - image_path: /assets/images/products/sars-pseudovirus/image-3.webp
+    srcset:
+      - url: "/assets/images/products/sars-pseudovirus/image-3.webp"
+        size: 1806w
+      - url: "/assets/images/products/sars-pseudovirus/image-3-1000.webp"
+        size: 1000w
+      - url: "/assets/images/products/sars-pseudovirus/image-3-600.webp"
+        size: 600w
+      - url: "/assets/images/products/sars-pseudovirus/image-3-360.webp"
+        size: 360w
+    sizes:
+      - "(min-width: 37.5em) 0.33vw"
+      - "(min-width: 64em) calc((100vw - 200px) / 3)"
+      - "(min-width: 80em) calc((100vw - 300px) / 3)"
     url: /assets/images/products/sars-pseudovirus/image-3.webp
     alt: Image 3
     title: Image 3
   - image_path: /assets/images/products/sars-pseudovirus/image-4.webp
+    srcset:
+      - url: "/assets/images/products/sars-pseudovirus/image-4.webp"
+        size: 750w
+      - url: "/assets/images/products/sars-pseudovirus/image-4-450.webp"
+        size: 450w
+      - url: "/assets/images/products/sars-pseudovirus/image-4-270.webp"
+        size: 270w
+    sizes:
+      - "(min-width: 37.5em) 0.33vw"
+      - "(min-width: 64em) calc((100vw - 200px) / 3)"
+      - "(min-width: 80em) calc((100vw - 300px) / 3)"
     url: /assets/images/products/sars-pseudovirus/image-4.webp
     alt: Image 4
     title: Image 4
