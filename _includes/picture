@@ -14,10 +14,33 @@
     {% if src.width %}width="{{ src.width }}"{% endif %}
   />
   {% endfor %}
+
+  {% if include.srcset %}
+    {% capture srcset %}
+      {% for set in include.srcset %}
+        {{ set.url }} {{ set.size }}
+        {%- unless forloop.last -%},{% endunless %}
+      {% endfor %}
+    {% endcapture %}
+  {% else %}
+    {% assign srcset = nil %}
+  {% endif %}
+
+  {% if include.sizes %}
+    {% capture sizes %}
+      {%- for size in include.sizes -%}
+        {{- size -}}
+        {%- unless forloop.last -%},{% endunless %}
+      {%- endfor -%}
+    {% endcapture %}
+  {% else %}
+    {% assign sizes = nil %}
+  {% endif %}
+  
   <img
     src="{{ include.src }}"
-    {% if include.srcset %}srcset="{{ include.srcset }}"{% endif %}
-    {% if include.sizes %}sizes="{{ include.sizes }}"{% endif %}
+    {% if srcset -%}srcset="{{- srcset -}}"{%- endif %}
+    {% if sizes -%}sizes="{{- sizes -}}"{%- endif %}
     {% if include.alt %}alt="{{ include.alt }}"{% endif %}
     {% if include.style %}style="{{ include.style }}"{% endif %}
     {% if include.class %}class="{{ include.class }}"{% endif %}

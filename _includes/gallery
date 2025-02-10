@@ -35,29 +35,28 @@
         display: flex; align-items: center
       {%- endunless -%}
     {%- endcapture %}
+    {%- if img.type == "svg" -%}
+      {% capture onload -%}
+        SVGInject(this)
+      {%- endcapture %}
+      {% capture onerror -%}
+        this.style.visibility = 'visible'
+      {%- endcapture %}
+    {%- endif -%}
 
-    {% case img.type %}
-      {% when "svg" %}
-        {% include picture src=rel_path
-          source=img.source
-          class=img.class
-          style=img_style
-          alt=img.alt
-          picture_class=picture_class
-          picture_style=picture_style
-          onload="SVGInject(this)"
-          onerror="this.style.visibility = 'visible'"
-        %}
-      {% else %}
-        {% include picture src=rel_path
-          source=img.source
-          class=img.class
-          style=img_style
-          alt=img.alt
-          picture_class=picture_class
-          picture_style=picture_style
-        %}
-    {% endcase %}
+    {% include picture src=rel_path
+      source=img.source
+      srcset=img.srcset
+      sizes=img.sizes
+      class=img.class
+      style=img_style
+      alt=img.alt
+      picture_class=picture_class
+      picture_style=picture_style
+      onload=onload
+      onerror=onerror
+
+    %}
 
   {% if img.url %}</a>{% endif %}
   {% endfor %}

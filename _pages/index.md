@@ -31,9 +31,19 @@ head_scripts:
 
 # Three images section
 viral_engineering:
-  - image_path: /assets/images/home/stock-images/pexels-photo-5726794-600.webp
-    srcset: "/assets/images/home/stock-images/pexels-photo-5726794-216.webp 216w, /assets/images/home/stock-images/pexels-photo-5726794-360.webp 360w, /assets/images/home/stock-images/pexels-photo-5726794-600.webp 600w, /assets/images/home/stock-images/pexels-photo-5726794-1000.webp 1000w"
-    sizes: (max-width 37.5em) calc(100vw-2em), 41vw
+  - image_path: "/assets/images/home/stock-images/pexels-photo-5726794-600.webp"
+    srcset:
+      - url: "/assets/images/home/stock-images/pexels-photo-5726794-1000.webp"
+        size: 1000w
+      - url: "/assets/images/home/stock-images/pexels-photo-5726794-600.webp"
+        size: 600w
+      - url: "/assets/images/home/stock-images/pexels-photo-5726794-360.webp"
+        size: 360w
+      - url: "/assets/images/home/stock-images/pexels-photo-5726794-216.webp"
+        size: 216w
+    sizes:
+      - "(max-width 37.5em) calc(100vw-2em)"
+      - "41vw"
     image_class: aspect-ratio__3-2
     title: Viral Engineering
     alt: A woman looking through a microscope 
@@ -45,8 +55,18 @@ viral_engineering:
 
 cancer_immunotherapy_gene_therapy:
   - image_path: /assets/images/home/stock-images/pexels-photo-4033148-600.webp
-    srcset: "/assets/images/home/stock-images/pexels-photo-4033148-216.webp 216w, /assets/images/home/stock-images/pexels-photo-4033148-360.webp 360w, /assets/images/home/stock-images/pexels-photo-4033148-600.webp 600w, /assets/images/home/stock-images/pexels-photo-4033148-1000.webp 1000w"
-    sizes: (max-width 37.5em) calc(100vw-2em), 41vw
+    srcset:
+      - url: "/assets/images/home/stock-images/pexels-photo-4033148-1000.webp"
+        size: 1000w
+      - url: "/assets/images/home/stock-images/pexels-photo-4033148-600.webp"
+        size: 600w
+      - url: "/assets/images/home/stock-images/pexels-photo-4033148-360.webp"
+        size: 360w
+      - url: "/assets/images/home/stock-images/pexels-photo-4033148-216.webp"
+        size: 216w
+    sizes:
+      - "(max-width 37.5em) calc(100vw-2em)"
+      - "41vw"
     image_class: aspect-ratio__3-2
     title: Cancer Immunotherapy & Gene Therapy
     alt: Man Doing A Sample Test In The Laboratory 
@@ -54,8 +74,18 @@ cancer_immunotherapy_gene_therapy:
 
 vaccines:
   - image_path: /assets/images/home/stock-images/pexels-photo-3735747-600.webp
-    srcset: "/assets/images/home/stock-images/pexels-photo-3735747-216.webp 216w, /assets/images/home/stock-images/pexels-photo-3735747-360.webp 360w, /assets/images/home/stock-images/pexels-photo-3735747-600.webp 600w, /assets/images/home/stock-images/pexels-photo-3735747-1000.webp 1000w"
-    sizes: (max-width 37.5em) calc(100vw-2em), 41vw
+    srcset:
+      - url: "/assets/images/home/stock-images/pexels-photo-3735747-1000.webp"
+        size: 1000w
+      - url: "/assets/images/home/stock-images/pexels-photo-3735747-600.webp"
+        size: 600w
+      - url: "/assets/images/home/stock-images/pexels-photo-3735747-360.webp"
+        size: 360w
+      - url: "/assets/images/home/stock-images/pexels-photo-3735747-216.webp"
+        size: 216w
+    sizes:
+      - "(max-width 37.5em) calc(100vw-2em)"
+      - "41vw"
     image_class: aspect-ratio__3-2
     title: Viral Engineering
     alt: Person Holding Test Tubes
