@@ -67,19 +67,6 @@ include:
 #   - vendor/gems/
 #   - vendor/ruby/
 
-# Plugins (previously gems:)
-plugins:
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-gist
-  - jekyll-feed
-  - jemoji
-  - jekyll-include-cache
-  - jekyll-uncss-hook
-  - jekyll-minifier
-    # jekyll-subresource-integrity-hook must run last
-  - jekyll-subresource-integrity-hook
-
 footer:
   links:
     - label: "LinkedIn"
