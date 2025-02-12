@@ -1,4 +1,7 @@
 _site
+node_modules
+.bundle
 .sass-cache
 .jekyll-metadata
+.pug-cache
 Gemfile.lock

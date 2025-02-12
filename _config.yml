@@ -133,4 +133,5 @@ jekyll-minifier:
   uglifier_args:
     harmony: true
 
-
+jekyll-pug:
+  local_version: true
