@@ -48,6 +48,8 @@ jobs:
           node-version: 22
       - name: Install uncss
         run: npm install --global uncss
+      - name: Install local node packages
+        run: npm clean-install
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
