@@ -11,12 +11,6 @@ gem "jekyll", "~> 4.3.4"
 # This is the default theme for new Jekyll sites. You may change this to anything you like.
 gem "minimal-mistakes-jekyll", "~> 4.26"
 
-# Override dependency of jekyll-pug
-# Need to use local npm pug for filters
-gem "pug-ruby",
-  git: "https://github.com/Genvira/pug-ruby",
-  branch: "local-pug"
-
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
 # uncomment the line below. To upgrade, run `bundle update github-pages`.
 # gem "github-pages", group: :jekyll_plugins
@@ -26,9 +20,6 @@ group :jekyll_plugins do
   gem "jekyll-sitemap"
   gem "jekyll-gist"
   gem "jekyll-feed"
-  gem "jekyll-pug",
-    git: "https://github.com/Genvira/jekyll-pug/",
-    branch: "custom"
   gem "jemoji"
   gem "jekyll-include-cache"
   gem "jekyll-algolia"
@@ -39,6 +30,8 @@ group :jekyll_plugins do
   gem "jekyll-subresource-integrity-hook",
     git: "https://github.com/Genvira/jekyll-subresource-integrity-hook",
     branch: "dev"
+  gem "jekyll-hcml",
+    git: "https://github.com/Genvira/jekyll-hcml"
 end
 
 # Dependency of jekyll-uncss

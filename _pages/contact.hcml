@@ -15,8 +15,8 @@ head_scripts:
     crossorigin: "anonymous"
 ---
 
-div
-	style.
+div {
+	style {r"
 		.contact-flex-row {
 			flex-direction: row;
 
@@ -31,46 +31,54 @@ div
 				}
 			}
 		}
+	"}
 
-	.flex-row.flex-justify-space-evenly.contact-flex-row
+	.flex-row.flex-justify-space-evenly.contact-flex-row {
 		// Contact Form
 		#contact-form.flex-column
-			form(action="https://formspree.io/f/xovvbkae", method="POST")
-				label
-					span Name
-					input#name(type="text", name="name" required)
+			form(action="https://formspree.io/f/xovvbkae", method="POST") {
+				label {
+					span "Name"
+					input#name(type="text", name="name" required);
+				}
 
-				label
-					span Email
-					input#email(type="email", name="email" required)
+				label {
+					span "Email"
+					input#email(type="email", name="email" required);
+				}
 
 				//- Hidden honeypot for spam prevention
 				//- (Not supported by FormSpree)
-				input#_gotcha(
+				input#gotcha_(
 					type="hidden", name="_gotcha",
 					style="display: none !important"
-				)
+				);
 
-				label
-					span Purpose
-					select#purpose(name="purpose", required)
-						option(value="" disabled selected) Select an Option
-						option(value="general") General Inquiries
-						option(value="products") Products
-						option(value="services") Services
-						option(value="other") Other
+				label {
+					span "Purpose"
+					select#purpose(name="purpose", required) {
+						option(value="" disabled selected) "Select an Option"
+						option(value="general") "General Inquiries"
+						option(value="products") "Products"
+						option(value="services") "Services"
+						option(value="other") "Other"
+					}
+				}
 
-				label
-					span Message
-					textarea#message(type="text", name="message", required)
+				label {
+					span "Message"
+					textarea#message(type="text", name="message", required) {}
+				}
+				
+				button#submit.btn.btn--large(type="submit") "Send"
 
-				button#submit.btn.btn--large(type="submit") Send
+			}
 
-		.flex-column
+		.flex-column {
 			// Map
-			#map
+			#map {}
 
-			style.
+			style {"
 				#map {
 					width: 25rem;
 					max-height: calc(100vh - 2rem);
@@ -81,8 +89,9 @@ div
 						aspect-ratio: 2 / 3;
 					}
 				}
+			"}
 
-			script.
+			script {#"
 				var provider = 'https://tile.openstreetmap.org/{z}/{x}/{y}.png';
 				var mapOptions = {
 						center: [45.3370916, -75.6848517],
@@ -101,7 +110,12 @@ div
 				L.marker(mapOptions["center"]).addTo(map)
 					.bindPopup('We are here: <br> 310 Hunt Club Rd, Suite 304')
 					.openPopup();
+			"#}
 
-			div
-				h2 Contact Info
-				| {% include contact %}
+			div {
+				h2 "Contact Info"
+				#" {% include contact %} "#
+			}
+		}
+	}
+}
