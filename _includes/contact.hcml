@@ -1,0 +1,80 @@
+{% capture address_url %}
+	https://www.google.com/maps/search/{% if site.contact.address.line_1 %}{{site.contact.address.line_1 | url_encode }}{% endif %}{% if site.contact.address.line_2 %}+{{site.contact.address.line_2 | url_encode }}{% endif %}{% if site.contact.address.line_3 %}+{{site.contact.address.line_3 | url_encode }}{% endif %}{% if site.contact.address.city %}+{{site.contact.address.city | url_encode }}{% endif %}{% if site.contact.address.region %}+{{site.contact.address.region | url_encode }}{% endif %}{% if site.contact.address.post_code %}+{{site.contact.address.post_code | url_encode }}{% endif %}{% if site.contact.address.country %}+{{site.contact.address.country | url_encode }}{% endif %}
+{% endcapture %}
+
+{% if site.contact %}
+	.contact-info {
+		// Email
+		{% if site.contact.email %}
+			.contact-info__email
+				a(href="mailto:{{site.contact.email}}")
+					"{{ site.contact.email }}"
+		{% endif %}
+
+		// Phone number
+		{% if site.contact.phone %}
+			.contact-info__phone
+				a(href="tel={{
+					site.contact.phone | remove: ' ' | remove: '-'
+					| remove: '(' | remove: ')'
+				}}")
+					#"{{ site.contact.phone }}"#
+		{% endif %}
+
+		// Address (multiple parts)
+		{% if site.contact.address %}
+			.contact-info__address a(href="{{ address_url }}") {
+				// Line 1
+				{% if site.contact.address.line_1 %}
+					.contact-info__address_line-1
+						#"{{ site.contact.address.line_1 }}"#
+				{% endif %}
+
+				// Line 2
+				{% if site.contact.address.line_2 %}
+					.contact-info__address_line-2
+						#"{{ site.contact.address.line_2 }}"#
+				{% endif %}
+
+				// Line 3
+				{% if site.contact.address.line_3 %}
+					.contact-info__address_line-3
+						#"{{ site.contact.address.line_3 }}"#
+				{% endif %}
+
+				// City, Region, Post code
+				{% if site.contact.address.city or site.contact.address.region or site.contact.address.post_code %}
+					div {
+						// City
+						{% if site.contact.address.city %}
+							span.contact-info__address_city
+								#"{{ site.contact.address.city }}"#
+					        {%- if site.contact.address.region %}#", "#{%- endif %}
+						{% endif %}
+						
+						// Region
+						{% if site.contact.address.region %}
+							span.contact-info__address_region
+								#"{{ site.contact.address.region }}"#
+						{% endif %}
+
+						// Post Code
+						{% if site.contact.address.post_code %}
+							// Add extra space
+							#" "#
+
+							span.contact-info__address_post-code
+								#"{{ site.contact.address.post_code }}"#
+						{% endif %}
+					}
+				{% endif %}
+
+				// Country
+				{% if site.contact.address.country %}
+					.contact-info__address_country
+						#"{{ site.contact.address.country }}"#
+				{% endif %}
+			}
+		{% endif %}
+	}
+{% endif %}

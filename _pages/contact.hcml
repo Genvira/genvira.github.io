@@ -114,7 +114,7 @@ div {
 
 			div {
 				h2 "Contact Info"
-				#" {% include contact %} "#
+				#" {% include contact.hcml %} "#
 			}
 		}
 	}
