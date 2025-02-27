@@ -7,3 +7,8 @@
 .rounded {
   border-radius: $border-radius;
 }
+
+/* Override color with default */
+.text-color {
+  color: $text-color;
+}

@@ -23,6 +23,7 @@ Based heavily on gallery
   {% if img.url %}
   <a href="{{ img.url | relative_url }}"
     style="display: flex; align-items: center;"
+    class="text-color"
     {% if img.title %}title="{{ img.title }}" {% endif %}
     {% if img.alt %}aria-label="{{ img.alt }}"{% endif %}
   > {% endif %}
