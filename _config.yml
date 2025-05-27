@@ -135,3 +135,8 @@ jekyll-minifier:
 
 jekyll-pug:
   local_version: true
+
+# OSM options
+openstreetmap:
+  provider: "https://tile.openstreetmap.org/{z}/{x}/{y}.png"
+  attribution: \&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>

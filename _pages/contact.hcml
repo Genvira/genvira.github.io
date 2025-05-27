@@ -13,7 +13,37 @@ head_scripts:
   - url: "https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
     integrity: "sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
     crossorigin: "anonymous"
+
+map:
+  id: "map"
+  tile_class: "map-tiles"
+  center:
+    latitude: 45.3370916
+    longitude: -75.6848517
+  zoom: 15
+  max_zoom: 19
+  attribution_control: true
+  marker:
+      text: "We are here: <br> 310 Hunt Club Rd, Suite 304"
+      latitude: 45.3370916
+      longitude: -75.6848517
 ---
+
+{% capture provider %}
+	{%-if site.openstreetmap.provider-%}
+		{{-site.openstreetmap.provider-}}
+	{%-else-%}
+		https://tile.openstreetmap.org/{z}/{x}/{y}.png
+	{%-endif-%}
+{% endcapture %}
+
+{% capture attribution %}
+	{%-if site.openstreetmap.attribution-%}
+		{{-site.openstreetmap.attribution-}}
+	{%-else-%}
+		\&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>
+	{%-endif-%}
+{% endcapture %}
 
 div {
 	style {r"
@@ -76,7 +106,7 @@ div {
 
 		.flex-column {
 			// Map
-			#map {}
+			#{{page.map.id}} {}
 
 			style {"
 				#map {
@@ -92,23 +122,29 @@ div {
 			"}
 
 			script {#"
-				var provider = 'https://tile.openstreetmap.org/{z}/{x}/{y}.png';
+				var provider = '{{-provider | replace "'", "\'"-}}';
 				var mapOptions = {
-						center: [45.3370916, -75.6848517],
-						zoom: 18,
-						attributionControl: true
+						center: [
+							{{page.map.center.latitude}},
+							{{page.map.center.longitude}}
+						],
+						zoom: {{page.map.zoom}},
+						attributionControl: {{page.map.attribution_control}}
 				};
-				var map = new L.map('map', mapOptions)
+				var map = new L.map('{{page.map.id}}', mapOptions)
 
 				var tileLayerOptions = {
-						maxZoom: 19,
-						attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
-						className: 'map-tiles',
+						maxZoom: {{page.map.max_zoom}},
+						attribution: '{{-attribution | replace "'", "\'"-}}',
+						className: '{{page.map.tile_class}}',
 				};
 				L.tileLayer(provider, tileLayerOptions).addTo(map);
 
-				L.marker(mapOptions["center"]).addTo(map)
-					.bindPopup('We are here: <br> 310 Hunt Club Rd, Suite 304')
+				L.marker([
+					{{page.map.marker.latitude}},
+					{{page.map.marker.longitude}}
+				]).addTo(map)
+					.bindPopup('{{page.map.marker.text | replace "'", "\'"}}')
 					.openPopup();
 			"#}
 
