@@ -46,7 +46,7 @@ map:
 {% endcapture %}
 
 div {
-	style {r"
+	style {#"
 		.contact-flex-row {
 			flex-direction: row;
 
@@ -61,7 +61,7 @@ div {
 				}
 			}
 		}
-	"}
+	"#}
 
 	.flex-row.flex-justify-space-evenly.contact-flex-row {
 		// Contact Form
