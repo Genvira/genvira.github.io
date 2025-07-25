@@ -14,7 +14,7 @@
 		// Phone number
 		{% if site.contact.phone %}
 			.contact-info__phone
-				a(href="tel={{
+				a(href="tel:{{
 					site.contact.phone | remove: ' ' | remove: '-'
 					| remove: '(' | remove: ')'
 				}}")
