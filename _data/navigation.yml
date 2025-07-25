@@ -2,8 +2,8 @@ main:
   - title: "About"
     url: /about/
     sub:
-      - title: "Members and Advisors"
-        url: /about/members-and-advisors/
+      # - title: "Members and Advisors"
+      #   url: /about/members-and-advisors/
       - title: "Careers"
         url: /about/careers/
   - title: "Contact Us"
@@ -20,9 +20,9 @@ main:
     sub:
       - title: SARS-CoV-2 Pseudovirus
         url: /products/sars-cov-2-pseudovirus/
-      - title: Recombinant VSV
-        url: /products/recombinant-vsv/
-      - title: Recombinant Vaccinia
-        url: /products/recombinant-vaccinia/
+      # - title: Recombinant VSV
+      #   url: /products/recombinant-vsv/
+      # - title: Recombinant Vaccinia
+      #   url: /products/recombinant-vaccinia/
   - title: "Services"
     url: /services/

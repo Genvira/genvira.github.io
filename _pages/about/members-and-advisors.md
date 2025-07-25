@@ -1,6 +1,7 @@
 ---
 permalink: about/members-and-advisors/
 title: "Members and Advisors"
+published: false
 
 board_members:
   - image_path: /assets/images/members-and-advisors/board/jiahu-wang.jpg
