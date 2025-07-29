@@ -1,10 +1,13 @@
 ---
-title: "FemtoBioMed"
+title: "FemtoBioMed collaboration"
 categories:
   - News
 tags:
   - FemtoBioMed
 link: https://www.linkedin.com/posts/juhyun-choi-2a6274a_biotech-genetherapy-cancerimmunotherapy-ugcPost-7232713854906945536-Vli0
+
+header:
+  teaser: https://www.femtobiomed.com/images/logo.png
 ---
 
 > I'm thrilled to announce that FemtoBioMed has entered into a strategic research collaboration with Genvira, a leader in genetic engineering, to accelerate advancements in gene therapy and cancer immunotherapy.
