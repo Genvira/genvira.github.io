@@ -30,7 +30,7 @@ head_scripts:
   - url: /assets/js/plugins/svg-inject.js
 
 # Three images section
-viral_engineering:
+viral_based_therapeutics:
   - image_path: "/assets/images/home/stock-images/pexels-photo-5726794-600.webp"
     srcset:
       - url: "/assets/images/home/stock-images/pexels-photo-5726794-1000.webp"
@@ -45,7 +45,7 @@ viral_engineering:
       - "(max-width 37.5em) calc(100vw-2em)"
       - "41vw"
     image_class: aspect-ratio__3-2
-    title: Viral Engineering
+    title: Viral-based Therapeutics
     alt: A woman looking through a microscope 
     excerpt: |
       Genvira specializes in viral engineering. We design, construct and characterize customized RNA/DNA viruses which are non-pathogenic, long term stability and have low immunogenicity and high transduction efficiency. These viruses are utilized in:
@@ -87,7 +87,7 @@ vaccines:
       - "(max-width 37.5em) calc(100vw-2em)"
       - "41vw"
     image_class: aspect-ratio__3-2
-    title: Viral Engineering
+    title: Vaccines
     alt: Person Holding Test Tubes
     excerpt: Our world-class laboratory and experts can create a vaccine for all your research and clinical needs. For example, because our SARS CoV-2 pseudoviruses don’t replicate, they are safe and can easily be applicable in vitro and in vivo studies by researchers who don’t have BSL3 and BSL laboratories.
 
@@ -151,8 +151,9 @@ feature_row:
 ---
 
 <!-- Three images section -->
+<h2 style="display: none;">What we do</h2>
 {% include feature_row
-  id="viral_engineering"
+  id="viral_based_therapeutics"
   type="left"
   hx="h3"
   class="no-bottom-border"
@@ -171,7 +172,7 @@ feature_row:
 %}
 <!-- End Three images section -->
 
-## Our Services
+## Collaboration
 {% include feature_row %}
 
 ## Supported by

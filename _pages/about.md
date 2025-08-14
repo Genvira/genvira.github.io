@@ -6,7 +6,7 @@ head_scripts:
   - url: /assets/js/plugins/svg-inject.js
 ---
 
-Located in the heart of Canada’s capital, Genvira Biosciences is a pioneering force in viral-based biotherapeutics. As a Contract Research, Development, and Manufacturing Organization (CRDMO), we provide end-to-end solutions for the design, engineering, and production of viral vectors for cancer immunotherapy, gene therapy, and vaccines. In addition to supporting our Canadian and international clients with customized DNA and RNA virus platforms, Genvira also develops its own innovative in-house therapies, leveraging our proprietary AI-powered engineering technology to advance cutting-edge treatments. Whether through client partnerships or our internal pipeline, we are committed to delivering high-quality, stable vectors that drive breakthroughs in clinical development.
+Located in the heart of Canada’s capital, Genvira Biosciences is a pioneering force in viral-based biotherapeutics. As a Contract Research, Development, and Manufacturing Organization (CRDMO), we provide end-to-end solutions for the design, engineering, and production of viral vectors for cancer immunotherapy, gene therapy, and vaccines. In addition to supporting our Canadian and international collaborators with customized DNA and RNA virus platforms, Genvira also develops its own innovative in-house therapies, leveraging our proprietary AI-powered engineering technology to advance cutting-edge treatments. Whether through partnerships or our internal pipeline, we are committed to delivering high-quality, stable vectors that drive breakthroughs in clinical development.
 
 ## Our Commitment
 

@@ -24,6 +24,6 @@ main:
       #   url: /products/recombinant-vsv/
       # - title: Recombinant Vaccinia
       #   url: /products/recombinant-vaccinia/
-  - title: "Services"
+  - title: "Collaboration"
     # url: /services/
-    url: /#our-services
+    url: /#collaboration
