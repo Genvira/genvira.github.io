@@ -27,6 +27,7 @@ locale: en-CA
 
 footer_scripts:
   - "/assets/js/main-custom.js"
+  - "/assets/js/email-obf.js"
 
 # Contact information
 contact:

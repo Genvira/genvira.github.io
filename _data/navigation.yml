@@ -2,28 +2,25 @@ main:
   - title: "About"
     url: /about/
     sub:
-      # - title: "Members and Advisors"
-      #   url: /about/members-and-advisors/
-      - title: "Careers"
-        url: /about/careers/
-  - title: "Contact Us"
-    url: /contact/
-  - title: "In the News"
+      - title: "Company History"
+        url: /about/history/
+      - title: "Members and Advisors"
+        url: /about/members-and-advisors/
+  - title: "Viral Vectors"
+    url: /#viral-vectors
+  - title: "Pipeline"
+    url: /pipeline/
+  - title: "Partnering"
+    url: /partnering/
+  - title: "Careers"
+    url: /careers/
+  - title: "News"
     url: /posts/
     sub:
       - title: "Categories"
         url: /posts/categories/
       - title: "Tags"
         url: /posts/tags/
-  - title: "Products"
-    url: /products/
-    sub:
-      - title: SARS-CoV-2 Pseudovirus
-        url: /products/sars-cov-2-pseudovirus/
-      # - title: Recombinant VSV
-      #   url: /products/recombinant-vsv/
-      # - title: Recombinant Vaccinia
-      #   url: /products/recombinant-vaccinia/
-  - title: "Collaboration"
-    # url: /services/
-    url: /#collaboration
+    url: /about/careers/
+  - title: "Contact Us"
+    url: /contact/

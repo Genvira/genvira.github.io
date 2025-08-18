@@ -48,7 +48,10 @@ viral_based_therapeutics:
     title: Viral-based Therapeutics
     alt: A woman looking through a microscope 
     excerpt: |
-      Genvira specializes in viral engineering. We design, construct and characterize customized RNA/DNA viruses which are non-pathogenic, long term stability and have low immunogenicity and high transduction efficiency. These viruses are utilized in:
+      Genvira specializes in viral engineering.
+      We design, construct, and characterize customized RNA/DNA viral vectors that are **non-pathogenic, genetically stable, exhibit low immunogenicity, and deliver high transductions efficiency***.
+      Our platform underpins pipeline and partnered programs in:
+
       - Cancer Immunotherapy
       - Gene therapy
       - Vaccines
@@ -70,7 +73,8 @@ cancer_immunotherapy_gene_therapy:
     image_class: aspect-ratio__3-2
     title: Cancer Immunotherapy & Gene Therapy
     alt: Man Doing A Sample Test In The Laboratory 
-    excerpt: Our bioengineered DNA viruses such as Adeno-associated viruses (AAVs) and Myxoma viruses are used to help deliver genes of interest into target mammalian cells and tissues which then generates new instructions for the cells to control the progression of diseases such as cancers, retinal disorders, etc. We also conduct a wide range of functional bioassays to screen and test the potency and immunogenicity of our bioengineered viruses.
+    excerpt: |
+      Our bioengineered viruses are built to deliver genes of interest to targeted mammalian cells and tissues, providing new cellular instructions to modulate diseases including **cancers** and **rare disease**. Our development engine integrates **potency, durability, and immunogenicity** assays to rank candidates, de-risk translation, and advance the most promising vectors into **preclinical and co-development** pathways.
 
 vaccines:
   - image_path: /assets/images/home/stock-images/pexels-photo-3735747-600.webp
@@ -89,68 +93,13 @@ vaccines:
     image_class: aspect-ratio__3-2
     title: Vaccines
     alt: Person Holding Test Tubes
-    excerpt: Our world-class laboratory and experts can create a vaccine for all your research and clinical needs. For example, because our SARS CoV-2 pseudoviruses don’t replicate, they are safe and can easily be applicable in vitro and in vivo studies by researchers who don’t have BSL3 and BSL laboratories.
-
-feature_row:
-  # Row 1
-  - image_path: /assets/images/home/svg-icons/virus-lab-research-test-tube.svg
-    image_type: svg
-    title: Cell and Viral Engineering
-    excerpt: Delivering high-quality engineered vectors and cells
-    item_class: "feature-row__small-image feature-row__square-image"
-
-  - image_path: /assets/images/home/svg-icons/route.svg
-    image_type: svg
-    title: End-to-End Engineering
-    excerpt: From product design to engineering, production, & testing
-    item_class: "feature-row__small-image feature-row__square-image"
-
-  - image_path: /assets/images/home/svg-icons/heartbeat.svg
-    image_type: svg
-    title: Formulation
-    excerpt: Achieve viral stability before and after delivery
-    item_class: "feature-row__small-image feature-row__square-image"
-
-  # Row 2
-  - title: Responsive layouts
-    image_type: svg
-    image_path: /assets/images/home/svg-icons/flask.svg
-    excerpt: In vitro viral vector characterization
-    item_class: "feature-row__small-image feature-row__square-image"
-
-  - title: Animal Models
-    image_type: svg
-    image_path: /assets/images/home/svg-icons/veterinary-care.svg
-    excerpt: In vivo efficacy studies
-    item_class: "feature-row__small-image feature-row__square-image"
-
-  - title: Process Development and Small-Scale Production
-    image_type: svg
-    image_path: /assets/images/home/svg-icons/pills-3-bold-duotone.svg
-    excerpt: Optimization of process and yield
-    item_class: "feature-row__small-image feature-row__square-image"
-
-  # Row 3
-  - title: FDA Regulatory Filings
-    image_type: svg
-    image_path: /assets/images/home/svg-icons/document-medicine-bold-duotone.svg
-    excerpt: IND & CMC filing expertise
-    item_class: "feature-row__small-image feature-row__square-image"
-
-  - title: GLP-Like Studies
-    image_type: svg
-    image_path: /assets/images/home/svg-icons/lab-research-rounded.svg
-    excerpt: Studies under GLP guideline
-    item_class: "feature-row__small-image feature-row__square-image"
-
-  - title: MVS to BDS Production
-    image_type: svg
-    image_path: /assets/images/home/svg-icons/heart-plus-rounded.svg
-    excerpt: Transition and scalability consultation
-    item_class: "feature-row__small-image feature-row__square-image"
+    excerpt: |
+      We are advancing **vector-enabled cancer vaccines** and co-developing programs with partners to move rapidly from discovery to IND.
+      Our platform encodes **tumor neoantigens and immune modulators** into optimized viral vectors to drive durable, tumor-specific T-cell responses. 
 ---
 
 <!-- Three images section -->
+# Viral Vectors
 <h2 style="display: none;">What we do</h2>
 {% include feature_row
   id="viral_based_therapeutics"
@@ -171,9 +120,6 @@ feature_row:
   class="no-bottom-border"
 %}
 <!-- End Three images section -->
-
-## Collaboration
-{% include feature_row %}
 
 ## Supported by
 {% include supported_by %}
