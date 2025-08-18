@@ -25,4 +25,4 @@ In-/Out-Licensing -- Flexible licensing of our proprietary viral engineering tec
 
 ## Contact
 
-We welcome inquiries from potential partners. Please reach out to us at: <a Dhs1ewcqvT="1">k-FcoB1KW8gPvxy5qZqFfQmWteqHD0<a>
+We welcome inquiries from potential partners. Please reach out to us at: <a Dhs1ewcqvT="1">{{ "bd@genvira.com" | encrypt_email }}<a>

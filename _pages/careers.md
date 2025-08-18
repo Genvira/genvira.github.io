@@ -5,7 +5,7 @@ title: "Careers"
 layout: header-in-content
 classes: wide
 
-excerpt: Genvira is always seeking inspired bioengineers, cancer biologists, immunologists, molecular biologists, quality control engineers, and quality assurance engineers. Positions range from lab technicians, research scientists, to co-op students. If you are interested, please send a cover letter and resume to <a Dhs1ewcqvT="1">raNMIAODWvAWs6GZ_4uRTRxChninEU3f</a>
+excerpt: Genvira is always seeking inspired bioengineers, cancer biologists, immunologists, molecular biologists, quality control engineers, and quality assurance engineers. Positions range from lab technicians, research scientists, to co-op students. If you are interested, please send a cover letter and resume to <a Dhs1ewcqvT="1">EbghpVGpi9HMdCAanGWaKviwY_I3wXdM</a>
 
 header:
   overlay_color: "#5e616c"

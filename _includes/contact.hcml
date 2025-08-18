@@ -7,8 +7,8 @@
 		// Email
 		{% if site.contact.email %}
 			.contact-info__email
-				a(href="mailto:{{site.contact.email}}")
-					"{{ site.contact.email }}"
+				a(Dhs1ewcqvT="1")
+					"{{ site.contact.email | encrypt_email }}"
 		{% endif %}
 
 		// Phone number
