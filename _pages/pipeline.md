@@ -2,6 +2,8 @@
 permalink: /pipeline/
 title: "Pipeline"
 
+classes: wide
+
 head_scripts:
   - url: /assets/js/plugins/svg-inject.js
 ---
