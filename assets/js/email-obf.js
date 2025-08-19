@@ -5,6 +5,21 @@ const EmailObfuscator = (() => {
   const NONCE_BYTES = 8;
   const BLOCK_BYTES = 16;
 
+  // Interaction events to trigger decrypting the emails
+  const EVENTS = [
+    "click",
+    "contextmenu",
+    "mousemove",
+    "mousedown",
+    "mouseup",
+    "keydown",
+    "keyup",
+    "scroll",
+    "touchmove",
+    "touchstart",
+    "wheel",
+  ];
+
   // ---------- AES helpers ----------
   async function getKey(keyText) {
     const bytes = decodeJsKey(keyText);
@@ -131,12 +146,12 @@ const EmailObfuscator = (() => {
         }
       });
 
-      ["mouseenter", "focus", "click", "scroll"].forEach((evt) =>
+      EVENTS.forEach((evt) =>
         document.removeEventListener(evt, revealAll, true),
       );
     };
 
-    ["mouseenter", "focus", "click", "scroll"].forEach((evt) =>
+    EVENTS.forEach((evt) =>
       document.addEventListener(evt, revealAll, { capture: true, once: true }),
     );
   }
