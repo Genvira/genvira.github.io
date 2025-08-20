@@ -1,5 +1,5 @@
 ---
-permalink: /about/history
+permalink: /about/history/
 title: "Company History"
 
 head_scripts:
