@@ -21,6 +21,5 @@ main:
         url: /posts/categories/
       - title: "Tags"
         url: /posts/tags/
-    url: /about/careers/
   - title: "Contact Us"
     url: /contact/
